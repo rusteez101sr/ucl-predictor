@@ -4,14 +4,30 @@
   "private": true,
   "description": "UEFA Champions League knockout predictor",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "vitest run",
     "data:test": "node scripts/data-test.mjs",
     "engine:run": "tsx lib/engine/run-demo.ts",
-    "dev": "echo \"Striker: Next.js shell not scaffolded yet\" && exit 1",
-    "build": "tsc --noEmit"
+    "typecheck:engine": "tsc -p tsconfig.engine.json --noEmit"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "recharts": "^2.15.0"
   },
   "devDependencies": {
     "@types/node": "^20.17.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0"
