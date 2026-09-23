@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-09-23T04:15:00Z",
+  "reason": "UCL KO pedigree last 5 completed seasons (titles/finals/SF) — fills criteria gap: trophy resume not in GF/GA sheets. 2024-25 + 2025-26 titles credited to PSG per current project slate; earlier seasons public record.",
+  "demo": false,
+  "window": "2020-21 through 2025-26",
+  "teams": {
+    "psg": { "titles": 2, "finals": 2, "sf": 2, "note": "2024-25 + 2025-26 champions (project slate)" },
+    "rma": { "titles": 2, "finals": 2, "sf": 3, "note": "2021-22 + 2023-24 champions" },
+    "mci": { "titles": 1, "finals": 1, "sf": 2, "note": "2022-23 champions" },
+    "che": { "titles": 1, "finals": 1, "sf": 1, "note": "2020-21 champions — not in 2026/27 field" },
+    "bay": { "titles": 0, "finals": 0, "sf": 2, "note": "deep KO runs, no title in window" },
+    "liv": { "titles": 0, "finals": 0, "sf": 1, "note": "no title in last-5 window" },
+    "int": { "titles": 0, "finals": 1, "sf": 1, "note": "finalist in window" },
+    "bor": { "titles": 0, "finals": 1, "sf": 1, "note": "alias unused" },
+    "dor": { "titles": 0, "finals": 1, "sf": 1, "note": "2023-24 finalist" },
+    "bar": { "titles": 0, "finals": 0, "sf": 1, "note": "SF depth only" },
+    "ars": { "titles": 0, "finals": 0, "sf": 1, "note": "SF depth only" }
+  }
+}

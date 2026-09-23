@@ -8,27 +8,24 @@ const out = runEngine({
   demo: !league,
   seed: 42,
   reason: league
-    ? "10k MC; Elo from results + full domestic blend (36/36 coverage)"
+    ? "10k MC; Elo + domestic/UCL-2y form + UCL KO pedigree"
     : "demo knockout Monte Carlo",
   iterations: 10_000,
 });
 
 console.log("Wrote data/probabilities.json");
-console.log(
-  `demo=${out.demo} matches=${out.matches.length} iters=${out.tournament.iterations}`
-);
 const trophy = [...out.tournament.stage].sort(
   (a, b) => b.pTrophy - a.pTrophy
 );
-console.log("Top trophy / QF / SF:");
-for (const row of trophy.slice(0, 8)) {
+console.log("Top trophy:");
+for (const row of trophy.slice(0, 10)) {
   console.log(
-    `  ${row.teamId}: trophy ${(row.pTrophy * 100).toFixed(1)}% · QF ${(row.pQuarter * 100).toFixed(0)}% · SF ${(row.pSemi * 100).toFixed(0)}% · R16 ${((row.pR16 ?? 0) * 100).toFixed(0)}%`
+    `  ${row.teamId}: ${(row.pTrophy * 100).toFixed(1)}% trophy · QF ${(row.pQuarter * 100).toFixed(0)}%`
   );
 }
-const liv = out.tournament.stage.find((s) => s.teamId === "liv");
-if (liv) {
+for (const id of ["psg", "liv"]) {
+  const row = out.tournament.stage.find((s) => s.teamId === id)!;
   console.log(
-    `Liverpool: KO ${((liv.pKnockout ?? 0) * 100).toFixed(0)}% · R16 ${((liv.pR16 ?? 0) * 100).toFixed(0)}% · QF ${(liv.pQuarter * 100).toFixed(0)}% · SF ${(liv.pSemi * 100).toFixed(0)}% · Final ${(liv.pFinal * 100).toFixed(0)}% · Trophy ${(liv.pTrophy * 100).toFixed(1)}%`
+    `${id}: trophy ${(row.pTrophy * 100).toFixed(1)}% · QF ${(row.pQuarter * 100).toFixed(0)}% · SF ${(row.pSemi * 100).toFixed(0)}%`
   );
 }

@@ -63,10 +63,43 @@ function dataPath(file: string, root = process.cwd()) {
   return join(root, "data", file);
 }
 
+
+function loadPedigree(root?: string): Record<
+  string,
+  { titles?: number; finals?: number; sf?: number }
+> {
+  try {
+    const raw = JSON.parse(
+      readFileSync(dataPath("ucl-pedigree.json", root), "utf8")
+    );
+    return (raw.teams ?? {}) as Record<
+      string,
+      { titles?: number; finals?: number; sf?: number }
+    >;
+  } catch {
+    return {};
+  }
+}
+
+function applyPedigree(teams: TeamInput[], root?: string): TeamInput[] {
+  const ped = loadPedigree(root);
+  return teams.map((t) => {
+    const p = ped[t.id];
+    if (!p) return t;
+    return {
+      ...t,
+      uclTitles: p.titles ?? t.uclTitles,
+      uclFinals: p.finals ?? t.uclFinals,
+      uclSf: p.sf ?? t.uclSf,
+    };
+  });
+}
+
 export function loadTeams(root?: string): TeamInput[] {
   const raw = JSON.parse(readFileSync(dataPath("teams.json", root), "utf8"));
-  return raw.teams as TeamInput[];
+  return applyPedigree(raw.teams as TeamInput[], root);
 }
+
 
 export function loadBracket(root?: string): {
   stage?: string;
