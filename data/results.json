@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-09-22T21:30:00-05:00",
+  "reason": "demo seed — recent results for Elo/form context",
+  "results": [
+    { "id": "r1", "homeId": "rma", "awayId": "liv", "homeGoals": 2, "awayGoals": 1, "date": "2026-03-15" },
+    { "id": "r2", "homeId": "mci", "awayId": "psg", "homeGoals": 3, "awayGoals": 1, "date": "2026-03-15" },
+    { "id": "r3", "homeId": "bay", "awayId": "ars", "homeGoals": 2, "awayGoals": 2, "date": "2026-03-16" },
+    { "id": "r4", "homeId": "int", "awayId": "bar", "homeGoals": 1, "awayGoals": 0, "date": "2026-03-16" }
+  ]
+}

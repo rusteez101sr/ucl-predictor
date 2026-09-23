@@ -1,0 +1,14 @@
+{
+  "name": "ucl-predictor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "data:test": "node scripts/data-test.mjs",
+    "build": "tsc --noEmit",
+    "test": "npm run data:test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.6.0"
+  }
+}
