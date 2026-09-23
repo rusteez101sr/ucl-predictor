@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { DemoBanner } from "@/components/DemoBanner";
 import { Nav } from "@/components/Nav";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${sans.variable} ${display.variable}`}>
       <body className="bg-pitch-fade font-sans antialiased">
         <Nav />
+        <DemoBanner />
         <main className="mx-auto min-h-[calc(100vh-3.5rem)] max-w-6xl px-4 py-8">
           {children}
         </main>
