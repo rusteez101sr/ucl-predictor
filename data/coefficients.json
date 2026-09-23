@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-22T21:30:00-05:00",
+  "reason": "demo seed — UEFA club coefficients snapshot for strength mix",
+  "coefficients": {
+    "rma": 145.0,
+    "mci": 138.0,
+    "bay": 132.0,
+    "bar": 125.0,
+    "int": 120.0,
+    "psg": 118.0,
+    "liv": 115.0,
+    "ars": 110.0
+  }
+}
