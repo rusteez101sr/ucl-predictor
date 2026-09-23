@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T04:00:51Z",
-  "reason": "free domestic form: football-data.co.uk 2026-27 CSVs for EPL/LaLiga/SerieA/Ligue1 UCL clubs (keep OpenLigaDB Bundesliga); injuries still empty — no free no-key feed",
+  "timestamp": "2026-09-23T04:07:29Z",
+  "reason": "free domestic form for remaining non–Big-5 UCL clubs: football-data.co.uk 2627 (P1/N1/B1/T1/G1) + new/ NOR+AUT 2026; Wikipedia league-table GF/GA proxy for Shakhtar/Slavia/Slovan/Sabah; injuries still empty — no free no-key feed",
   "demo": false,
   "teams": [
     {
@@ -213,7 +213,11 @@
       "pot": 2,
       "ucl2yGf": 34,
       "ucl2yGa": 25,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 17,
+      "domesticGaLast10": 8,
+      "domesticPlayed": 7,
+      "domesticLeague": "Primeira Liga"
     },
     {
       "id": "avl",
@@ -245,7 +249,11 @@
       "pot": 2,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 18,
+      "domesticGaLast10": 3,
+      "domesticPlayed": 7,
+      "domesticLeague": "Primeira Liga"
     },
     {
       "id": "mun",
@@ -277,7 +285,11 @@
       "pot": 2,
       "ucl2yGf": 23,
       "ucl2yGa": 33,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 15,
+      "domesticGaLast10": 3,
+      "domesticPlayed": 7,
+      "domesticLeague": "Belgian Pro League"
     },
     {
       "id": "bet",
@@ -309,7 +321,11 @@
       "pot": 2,
       "ucl2yGf": 36,
       "ucl2yGa": 31,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 24,
+      "domesticGaLast10": 10,
+      "domesticPlayed": 7,
+      "domesticLeague": "Eredivisie"
     },
     {
       "id": "fey",
@@ -323,7 +339,11 @@
       "pot": 3,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 25,
+      "domesticGaLast10": 7,
+      "domesticPlayed": 7,
+      "domesticLeague": "Eredivisie"
     },
     {
       "id": "lil",
@@ -355,7 +375,11 @@
       "pot": 3,
       "ucl2yGf": 14,
       "ucl2yGa": 15,
-      "ucl2ySeasons": 1
+      "ucl2ySeasons": 1,
+      "domesticGfLast10": 25,
+      "domesticGaLast10": 8,
+      "domesticPlayed": 10,
+      "domesticLeague": "Eliteserien"
     },
     {
       "id": "nap",
@@ -423,7 +447,11 @@
       "pot": 3,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 16,
+      "domesticGaLast10": 6,
+      "domesticPlayed": 6,
+      "domesticLeague": "Süper Lig"
     },
     {
       "id": "shk",
@@ -437,7 +465,11 @@
       "pot": 3,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 15,
+      "domesticGaLast10": 4,
+      "domesticPlayed": 7,
+      "domesticLeague": "Ukrainian Premier League"
     },
     {
       "id": "gal",
@@ -451,7 +483,11 @@
       "pot": 3,
       "ucl2yGf": 21,
       "ucl2yGa": 26,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 13,
+      "domesticGaLast10": 10,
+      "domesticPlayed": 6,
+      "domesticLeague": "Süper Lig"
     },
     {
       "id": "slp",
@@ -465,7 +501,11 @@
       "pot": 4,
       "ucl2yGf": 12,
       "ucl2yGa": 37,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 25,
+      "domesticGaLast10": 6,
+      "domesticPlayed": 9,
+      "domesticLeague": "Czech First League"
     },
     {
       "id": "slo",
@@ -479,7 +519,11 @@
       "pot": 4,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 20,
+      "domesticGaLast10": 9,
+      "domesticPlayed": 8,
+      "domesticLeague": "Slovak First Football League"
     },
     {
       "id": "stu",
@@ -511,7 +555,11 @@
       "pot": 4,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 13,
+      "domesticGaLast10": 3,
+      "domesticPlayed": 5,
+      "domesticLeague": "Super League Greece"
     },
     {
       "id": "lask",
@@ -525,7 +573,11 @@
       "pot": 4,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 19,
+      "domesticGaLast10": 7,
+      "domesticPlayed": 7,
+      "domesticLeague": "Austrian Bundesliga"
     },
     {
       "id": "com",
@@ -575,7 +627,11 @@
       "pot": 4,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 25,
+      "domesticGaLast10": 9,
+      "domesticPlayed": 10,
+      "domesticLeague": "Eliteserien"
     },
     {
       "id": "sab",
@@ -589,7 +645,11 @@
       "pot": 4,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 14,
+      "domesticGaLast10": 1,
+      "domesticPlayed": 5,
+      "domesticLeague": "Azerbaijan Premier League"
     }
   ]
 }
