@@ -1,0 +1,33 @@
+name: Data refresh
+on:
+  workflow_dispatch:
+  schedule:
+    # Every 6 hours — football-data free tier is 10 req/min; keep light
+    - cron: "0 */6 * * *"
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - name: Refresh /data
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: npm run data:refresh | tee refresh-out.txt
+      - name: Commit cache if changed
+        run: |
+          if git diff --quiet -- data; then
+            echo "No data changes"
+          else
+            git config user.name "Scout bot"
+            git config user.email "scout@users.noreply.github.com"
+            git add data
+            git commit -m "chore(data): scheduled refresh"
+            git push
+          fi
