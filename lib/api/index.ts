@@ -102,3 +102,4 @@ export async function getUclFixtures(): Promise<
 
 export { refreshData } from "./refresh";
 export type { RefreshReport } from "./refresh";
+export * as theSportsDb from "./thesportsdb";

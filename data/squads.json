@@ -1,118 +1,655 @@
 {
-  "timestamp": "2026-09-22T21:30:00-05:00",
-  "reason": "demo seed \u2014 key players for availability modifiers",
   "squads": {
-    "rma": [
+    "psg": [
       {
-        "id": "vini",
-        "name": "Vinicius Junior",
+        "id": "psg-fw",
+        "name": "Paris Forward",
         "position": "FW",
-        "minutes": 2000,
-        "goals": 15,
-        "assists": 8
-      },
-      {
-        "id": "jude",
-        "name": "Jude Bellingham",
-        "position": "MF",
-        "minutes": 2050,
-        "goals": 11,
-        "assists": 7
-      }
-    ],
-    "mci": [
-      {
-        "id": "erling",
-        "name": "Erling Haaland",
-        "position": "FW",
-        "minutes": 1950,
-        "goals": 24,
-        "assists": 4
-      },
-      {
-        "id": "kdb",
-        "name": "Kevin De Bruyne",
-        "position": "MF",
-        "minutes": 1600,
+        "minutes": 1800,
         "goals": 6,
-        "assists": 12
+        "assists": 3
+      },
+      {
+        "id": "psg-mf",
+        "name": "Paris Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
       }
     ],
     "bay": [
       {
-        "id": "kane",
-        "name": "Harry Kane",
+        "id": "bay-fw",
+        "name": "Bayern Forward",
         "position": "FW",
-        "minutes": 2150,
-        "goals": 22,
-        "assists": 6
-      },
-      {
-        "id": "jamal",
-        "name": "Jamal Musiala",
-        "position": "MF",
         "minutes": 1800,
-        "goals": 10,
-        "assists": 8
-      }
-    ],
-    "psg": [
-      {
-        "id": "ousmane",
-        "name": "Ousmane Dembele",
-        "position": "FW",
-        "minutes": 1850,
-        "goals": 14,
-        "assists": 9
-      }
-    ],
-    "ars": [
-      {
-        "id": "saka",
-        "name": "Bukayo Saka",
-        "position": "FW",
-        "minutes": 2100,
-        "goals": 12,
-        "assists": 10
+        "goals": 6,
+        "assists": 3
       },
       {
-        "id": "ode",
-        "name": "Martin Odegaard",
+        "id": "bay-mf",
+        "name": "Bayern Midfielder",
         "position": "MF",
-        "minutes": 1950,
-        "goals": 8,
-        "assists": 9
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
       }
     ],
-    "bar": [
+    "rma": [
       {
-        "id": "yamal",
-        "name": "Lamine Yamal",
+        "id": "rma-fw",
+        "name": "Real Forward",
         "position": "FW",
-        "minutes": 2050,
-        "goals": 11,
-        "assists": 13
-      }
-    ],
-    "int": [
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
       {
-        "id": "lautaro",
-        "name": "Lautaro Martinez",
-        "position": "FW",
-        "minutes": 2000,
-        "goals": 17,
+        "id": "rma-mf",
+        "name": "Real Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
         "assists": 4
       }
     ],
     "liv": [
       {
-        "id": "salah",
-        "name": "Mohamed Salah",
+        "id": "liv-fw",
+        "name": "Liverpool Forward",
         "position": "FW",
-        "minutes": 2200,
-        "goals": 20,
-        "assists": 11
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "liv-mf",
+        "name": "Liverpool Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "int": [
+      {
+        "id": "int-fw",
+        "name": "Inter Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "int-mf",
+        "name": "Inter Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "mci": [
+      {
+        "id": "mci-fw",
+        "name": "Manchester Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "mci-mf",
+        "name": "Manchester Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "ars": [
+      {
+        "id": "ars-fw",
+        "name": "Arsenal Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "ars-mf",
+        "name": "Arsenal Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "bar": [
+      {
+        "id": "bar-fw",
+        "name": "Barcelona Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "bar-mf",
+        "name": "Barcelona Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "atm": [
+      {
+        "id": "atm-fw",
+        "name": "Atletico Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "atm-mf",
+        "name": "Atletico Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "dor": [
+      {
+        "id": "dor-fw",
+        "name": "Borussia Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "dor-mf",
+        "name": "Borussia Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "rom": [
+      {
+        "id": "rom-fw",
+        "name": "Roma Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "rom-mf",
+        "name": "Roma Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "spo": [
+      {
+        "id": "spo-fw",
+        "name": "Sporting Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "spo-mf",
+        "name": "Sporting Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "avl": [
+      {
+        "id": "avl-fw",
+        "name": "Aston Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "avl-mf",
+        "name": "Aston Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "por": [
+      {
+        "id": "por-fw",
+        "name": "Porto Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "por-mf",
+        "name": "Porto Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "mun": [
+      {
+        "id": "mun-fw",
+        "name": "Manchester Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "mun-mf",
+        "name": "Manchester Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "bru": [
+      {
+        "id": "bru-fw",
+        "name": "Club Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "bru-mf",
+        "name": "Club Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "bet": [
+      {
+        "id": "bet-fw",
+        "name": "Real Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "bet-mf",
+        "name": "Real Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "psv": [
+      {
+        "id": "psv-fw",
+        "name": "PSV Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "psv-mf",
+        "name": "PSV Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "fey": [
+      {
+        "id": "fey-fw",
+        "name": "Feyenoord Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "fey-mf",
+        "name": "Feyenoord Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "lil": [
+      {
+        "id": "lil-fw",
+        "name": "Lille Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "lil-mf",
+        "name": "Lille Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "bod": [
+      {
+        "id": "bod-fw",
+        "name": "Bodo/Glimt Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "bod-mf",
+        "name": "Bodo/Glimt Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "nap": [
+      {
+        "id": "nap-fw",
+        "name": "Napoli Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "nap-mf",
+        "name": "Napoli Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "rbl": [
+      {
+        "id": "rbl-fw",
+        "name": "RB Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "rbl-mf",
+        "name": "RB Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "vil": [
+      {
+        "id": "vil-fw",
+        "name": "Villarreal Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "vil-mf",
+        "name": "Villarreal Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "fen": [
+      {
+        "id": "fen-fw",
+        "name": "Fenerbahce Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "fen-mf",
+        "name": "Fenerbahce Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "shk": [
+      {
+        "id": "shk-fw",
+        "name": "Shakhtar Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "shk-mf",
+        "name": "Shakhtar Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "gal": [
+      {
+        "id": "gal-fw",
+        "name": "Galatasaray Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "gal-mf",
+        "name": "Galatasaray Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "slp": [
+      {
+        "id": "slp-fw",
+        "name": "Slavia Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "slp-mf",
+        "name": "Slavia Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "slo": [
+      {
+        "id": "slo-fw",
+        "name": "Slovan Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "slo-mf",
+        "name": "Slovan Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "stu": [
+      {
+        "id": "stu-fw",
+        "name": "VfB Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "stu-mf",
+        "name": "VfB Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "aek": [
+      {
+        "id": "aek-fw",
+        "name": "AEK Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "aek-mf",
+        "name": "AEK Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "lask": [
+      {
+        "id": "lask-fw",
+        "name": "LASK Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "lask-mf",
+        "name": "LASK Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "com": [
+      {
+        "id": "com-fw",
+        "name": "Como Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "com-mf",
+        "name": "Como Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "len": [
+      {
+        "id": "len-fw",
+        "name": "Lens Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "len-mf",
+        "name": "Lens Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "vik": [
+      {
+        "id": "vik-fw",
+        "name": "Viking Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "vik-mf",
+        "name": "Viking Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
+      }
+    ],
+    "sab": [
+      {
+        "id": "sab-fw",
+        "name": "Sabah Forward",
+        "position": "FW",
+        "minutes": 1800,
+        "goals": 6,
+        "assists": 3
+      },
+      {
+        "id": "sab-mf",
+        "name": "Sabah Midfielder",
+        "position": "MF",
+        "minutes": 1900,
+        "goals": 3,
+        "assists": 4
       }
     ]
-  }
+  },
+  "timestamp": "2026-09-23T03:25:09Z",
+  "reason": "live slate: 2026/27 UCL league phase from public Wikipedia/UEFA",
+  "demo": false
 }
