@@ -8,13 +8,15 @@ const out = runEngine({
   demo: !league,
   seed: 42,
   reason: league
-    ? "10k MC; Elo from results + full domestic blend (21/36 coverage) (sparse→0) (empty injuries ignored)"
+    ? "10k MC; Elo from results + full domestic blend (36/36 coverage)"
     : "demo knockout Monte Carlo",
   iterations: 10_000,
 });
 
 console.log("Wrote data/probabilities.json");
-console.log(`demo=${out.demo} matches=${out.matches.length} iters=${out.tournament.iterations}`);
+console.log(
+  `demo=${out.demo} matches=${out.matches.length} iters=${out.tournament.iterations}`
+);
 const trophy = [...out.tournament.stage].sort(
   (a, b) => b.pTrophy - a.pTrophy
 );
