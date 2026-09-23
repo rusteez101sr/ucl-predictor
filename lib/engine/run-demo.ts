@@ -1,44 +1,33 @@
-import { runEngine } from "./index";
+import { loadBracket, runEngine } from "./index";
 
-// Baseline (deterministic) — establishes probabilities.json
-runEngine({
-  demo: true,
-  seed: 42,
-  reason: "demo baseline Monte Carlo",
-  iterations: 10_000,
-});
+const bracket = loadBracket();
+const league =
+  bracket.stage === "league_phase" || bracket.ties.length === 0;
 
-// Second pass with a synthetic availability hit so the what-changed feed
-// isn't empty in demo mode (Striker /updates page).
 const out = runEngine({
-  demo: true,
+  // League-phase live slate → non-demo; knockout sample → demo seed.
+  demo: !league,
   seed: 42,
-  reason: "demo: key attacker unavailable (synthetic availability modifier)",
-  iterations: 10_000,
-  availability: [
-    {
-      teamId: "mci",
-      playerName: "Demo Star",
-      playerGcPer90: 0.9,
-      teamGoalsPer90: 2.4,
-      reason: "demo injury — synthetic for /updates feed",
-    },
-  ],
+  reason: league
+    ? "league-phase Monte Carlo on Scout free 2026/27 MD1+MD2 slate"
+    : "demo knockout Monte Carlo",
+  iterations: league ? 8_000 : 10_000,
 });
 
-console.log("Wrote data/probabilities.json + data/updates.json");
+console.log("Wrote data/probabilities.json");
+console.log(`demo=${out.demo} matches=${out.matches.length}`);
 console.log(`Moves >2pp: ${out.moves.length}; notable >5pp: ${out.notable.length}`);
-for (const m of out.notable.slice(0, 8)) {
+for (const m of out.notable.slice(0, 10)) {
   console.log(
-    `  ${m.teamId} ${m.metric} ${m.deltaPp! > 0 ? "+" : ""}${m.deltaPp}pp — ${m.reason}`
+    `  ${m.teamId} ${m.metric} ${m.deltaPp! > 0 ? "+" : ""}${m.deltaPp}pp`
   );
 }
 const trophy = [...out.tournament.stage].sort(
   (a, b) => b.pTrophy - a.pTrophy
 );
 console.log("Top trophy probs:");
-for (const row of trophy.slice(0, 5)) {
+for (const row of trophy.slice(0, 8)) {
   console.log(
-    `  ${row.teamId}: ${(row.pTrophy * 100).toFixed(1)}% trophy`
+    `  ${row.teamId}: ${(row.pTrophy * 100).toFixed(1)}% trophy · ${(row.pSemi * 100).toFixed(0)}% R16`
   );
 }

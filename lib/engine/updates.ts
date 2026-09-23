@@ -55,7 +55,19 @@ export function loadUpdates(root: string): UpdatesFile {
     return { timestamp: new Date().toISOString(), reason: "init", entries: [] };
   }
   try {
-    return JSON.parse(readFileSync(path, "utf8")) as UpdatesFile;
+    const raw = JSON.parse(readFileSync(path, "utf8")) as Partial<UpdatesFile> & {
+      updates?: UpdateEntry[];
+    };
+    const entries = Array.isArray(raw.entries)
+      ? raw.entries
+      : Array.isArray(raw.updates)
+        ? raw.updates
+        : [];
+    return {
+      timestamp: raw.timestamp ?? new Date().toISOString(),
+      reason: raw.reason ?? "init",
+      entries,
+    };
   } catch {
     return { timestamp: new Date().toISOString(), reason: "init", entries: [] };
   }

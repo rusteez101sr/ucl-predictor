@@ -19,3 +19,8 @@ Demo seed is deterministic (`seed = 42`). Live mode uses `Math.random`.
 When Scout refreshes data or Referee validates availability news, call
 `runEngine({ availability, reason })` and post any `notable` (>5pp) moves
 to the team thread.
+
+## League phase
+When `data/bracket.json` has `"stage": "league_phase"` (empty ties), `runEngine`
+uses `leaguephase.ts`: MD results + scheduled fixtures + average-opponent padding
+to 8 games → table → top-8 / playoff / R16 knockout MC.
