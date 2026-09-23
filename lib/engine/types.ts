@@ -18,6 +18,14 @@ export interface TeamInput {
   xgForLast10?: number;
   /** Optional expected goals against last 10. */
   xgAgainstLast10?: number;
+  /** Domestic league goals for (recent window) — Scout/OpenLigaDB when available. */
+  domesticGfLast10?: number;
+  domesticGaLast10?: number;
+  domesticPlayed?: number;
+  /** UCL league-phase GF/GA across last ~2 seasons (public tables). */
+  ucl2yGf?: number;
+  ucl2yGa?: number;
+  ucl2ySeasons?: number;
 }
 
 export interface TeamRatings {

@@ -1,0 +1,190 @@
+{
+  "timestamp": "2026-09-23T03:47:55Z",
+  "reason": "richer form: OpenLigaDB Bundesliga last matches + public UCL 2024-25/2025-26 league-phase GF/GA; injuries sparse on free tier",
+  "demo": false,
+  "teams": {
+    "bay": {
+      "league": "Bundesliga",
+      "source": "openligadb",
+      "matches": [
+        {
+          "date": "2026-08-28",
+          "opponent": "VfB Stuttgart",
+          "gf": 5,
+          "ga": 1,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "FC Schalke 04",
+          "gf": 0,
+          "ga": 0,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "SV 07 Elversberg",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-18",
+          "opponent": "1. FC Union Berlin",
+          "gf": 7,
+          "ga": 0,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        }
+      ],
+      "gfLast10": 14,
+      "gaLast10": 2,
+      "played": 4
+    },
+    "stu": {
+      "league": "Bundesliga",
+      "source": "openligadb",
+      "matches": [
+        {
+          "date": "2026-08-28",
+          "opponent": "FC Bayern München",
+          "gf": 1,
+          "ga": 5,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "1. FC Köln",
+          "gf": 4,
+          "ga": 1,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "TSG Hoffenheim",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Borussia Dortmund",
+          "gf": 0,
+          "ga": 1,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        }
+      ],
+      "gfLast10": 6,
+      "gaLast10": 9,
+      "played": 4
+    },
+    "rbl": {
+      "league": "Bundesliga",
+      "source": "openligadb",
+      "matches": [
+        {
+          "date": "2026-08-29",
+          "opponent": "Borussia Mönchengladbach",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "SV Werder Bremen",
+          "gf": 1,
+          "ga": 3,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Hamburger SV",
+          "gf": 5,
+          "ga": 0,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Bayer 04 Leverkusen",
+          "gf": 0,
+          "ga": 2,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        }
+      ],
+      "gfLast10": 9,
+      "gaLast10": 5,
+      "played": 4
+    },
+    "dor": {
+      "league": "Bundesliga",
+      "source": "openligadb",
+      "matches": [
+        {
+          "date": "2026-08-29",
+          "opponent": "Hamburger SV",
+          "gf": 2,
+          "ga": 0,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "TSG Hoffenheim",
+          "gf": 3,
+          "ga": 2,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "SC Paderborn 07",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "VfB Stuttgart",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Bundesliga",
+          "source": "openligadb"
+        }
+      ],
+      "gfLast10": 9,
+      "gaLast10": 2,
+      "played": 4
+    }
+  },
+  "gaps": [
+    "Only Bundesliga clubs via OpenLigaDB (bay/dor/rbl/stu). Other domestic leagues: free TheSportsDB too thin."
+  ]
+}
