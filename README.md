@@ -54,3 +54,21 @@ Optional env vars for live refresh (never commit secrets):
 ## Acceptance
 
 Nothing merges until [TESTING.md](./TESTING.md) is green (or explicitly waived).
+
+
+## Review build (GitHub Pages)
+
+Static export is configured for project Pages at `/ucl-predictor`.
+
+1. Merge this branch (or enable Pages on `main`).
+2. Repo **Settings → Pages → Source: GitHub Actions**.
+3. After the workflow runs, open: https://rusteez101sr.github.io/ucl-predictor/
+
+Local static build:
+
+```bash
+npm run build:pages
+npx serve out
+```
+
+When you’re happy with the Pages review, deploy the same app to Vercel (omit `GITHUB_PAGES` so there is no basePath).

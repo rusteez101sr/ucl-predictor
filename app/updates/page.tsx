@@ -2,7 +2,6 @@ import { EmptyState } from "@/components/EmptyState";
 import { UpdatedLabel } from "@/components/UpdatedLabel";
 import { loadTeams, loadUpdates, teamMap, teamName } from "@/lib/data/load";
 
-export const dynamic = "force-dynamic";
 
 export default async function UpdatesPage() {
   const [updatesData, teamsData] = await Promise.all([

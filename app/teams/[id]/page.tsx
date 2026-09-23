@@ -12,7 +12,11 @@ import {
   teamName,
 } from "@/lib/data/load";
 
-export const dynamic = "force-dynamic";
+export async function generateStaticParams() {
+  const { teams } = await loadTeams();
+  return teams.map((t) => ({ id: t.id }));
+}
+
 
 export default async function TeamDetailPage({
   params,

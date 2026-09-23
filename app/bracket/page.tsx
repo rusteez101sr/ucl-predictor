@@ -11,7 +11,6 @@ import {
   teamName,
 } from "@/lib/data/load";
 
-export const dynamic = "force-dynamic";
 
 export default async function BracketPage() {
   const [bracket, teamsData, probs, fixturesData] = await Promise.all([
