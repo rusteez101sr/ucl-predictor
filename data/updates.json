@@ -1,7 +1,750 @@
 {
-  "timestamp": "2026-09-23T03:35:01.997Z",
-  "reason": "league-phase re-sim after Scout free live slate",
+  "timestamp": "2026-09-23T03:44:39.641Z",
+  "reason": "determinism A",
   "entries": [
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "psg",
+      "deltaPp": -2.2,
+      "metric": "pTrophy",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "bay",
+      "deltaPp": -2.2,
+      "metric": "pSemi",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "ars",
+      "deltaPp": 2.4,
+      "metric": "pSemi",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "bar",
+      "deltaPp": -2.1,
+      "metric": "pTrophy",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "ars",
+      "deltaPp": -4.4,
+      "metric": "pHome",
+      "matchId": "ars-lil",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "lil",
+      "deltaPp": 2.6,
+      "metric": "pAway",
+      "matchId": "ars-lil",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "int",
+      "deltaPp": -2.2,
+      "metric": "pHome",
+      "matchId": "int-bru",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "rbl",
+      "deltaPp": 3.5,
+      "metric": "pHome",
+      "matchId": "rbl-psv",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "psv",
+      "deltaPp": -4.2,
+      "metric": "pAway",
+      "matchId": "rbl-psv",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "vil",
+      "deltaPp": 2.2,
+      "metric": "pHome",
+      "matchId": "vil-nap",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "lask",
+      "deltaPp": 2.1,
+      "metric": "pHome",
+      "matchId": "lask-liv",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "avl",
+      "deltaPp": 3.2,
+      "metric": "pHome",
+      "matchId": "avl-fen",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "shk",
+      "deltaPp": -3.3,
+      "metric": "pHome",
+      "matchId": "shk-aek",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "aek",
+      "deltaPp": 2.6,
+      "metric": "pAway",
+      "matchId": "shk-aek",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "psg",
+      "deltaPp": -3.4,
+      "metric": "pAway",
+      "matchId": "mci-psg",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "slo",
+      "deltaPp": -2.5,
+      "metric": "pHome",
+      "matchId": "slo-stu",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.641Z",
+      "teamId": "stu",
+      "deltaPp": 2.4,
+      "metric": "pAway",
+      "matchId": "slo-stu",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.590Z",
+      "teamId": "mci",
+      "deltaPp": 2.3,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.590Z",
+      "teamId": "slp",
+      "deltaPp": 3,
+      "metric": "pAway",
+      "matchId": "sab-slp",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.590Z",
+      "teamId": "avl",
+      "deltaPp": -2.5,
+      "metric": "pHome",
+      "matchId": "avl-fen",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.590Z",
+      "teamId": "shk",
+      "deltaPp": 2.2,
+      "metric": "pHome",
+      "matchId": "shk-aek",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:39.590Z",
+      "teamId": "bet",
+      "deltaPp": -2.4,
+      "metric": "pHome",
+      "matchId": "bet-por",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "psg",
+      "deltaPp": 2.8,
+      "metric": "pTrophy",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "bay",
+      "deltaPp": -2.1,
+      "metric": "pTrophy",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "mci",
+      "deltaPp": -2.5,
+      "metric": "pSemi",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "bar",
+      "deltaPp": 2,
+      "metric": "pTrophy",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "bar",
+      "deltaPp": 2.5,
+      "metric": "pFinal",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "spo",
+      "deltaPp": 2.7,
+      "metric": "pAway",
+      "matchId": "len-spo",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "sab",
+      "deltaPp": 2.7,
+      "metric": "pHome",
+      "matchId": "sab-slp",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "slp",
+      "deltaPp": -4,
+      "metric": "pAway",
+      "matchId": "sab-slp",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "ars",
+      "deltaPp": 4.2,
+      "metric": "pHome",
+      "matchId": "ars-lil",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "lil",
+      "deltaPp": -2.3,
+      "metric": "pAway",
+      "matchId": "ars-lil",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "atm",
+      "deltaPp": -2.6,
+      "metric": "pHome",
+      "matchId": "atm-mun",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "bar",
+      "deltaPp": -3,
+      "metric": "pAway",
+      "matchId": "gal-bar",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "rbl",
+      "deltaPp": -4,
+      "metric": "pHome",
+      "matchId": "rbl-psv",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "psv",
+      "deltaPp": 5.1,
+      "metric": "pAway",
+      "matchId": "rbl-psv",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "aek",
+      "deltaPp": -2.9,
+      "metric": "pAway",
+      "matchId": "shk-aek",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "dor",
+      "deltaPp": -2.3,
+      "metric": "pAway",
+      "matchId": "bod-dor",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "psg",
+      "deltaPp": 3,
+      "metric": "pAway",
+      "matchId": "mci-psg",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "bet",
+      "deltaPp": 3.9,
+      "metric": "pHome",
+      "matchId": "bet-por",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "por",
+      "deltaPp": -2.9,
+      "metric": "pAway",
+      "matchId": "bet-por",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "slo",
+      "deltaPp": 2.1,
+      "metric": "pHome",
+      "matchId": "slo-stu",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:32.023Z",
+      "teamId": "stu",
+      "deltaPp": -3.1,
+      "metric": "pAway",
+      "matchId": "slo-stu",
+      "reason": "true path probs: R16/QF/SF/Final (label fix)"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "psg",
+      "deltaPp": -2.2,
+      "metric": "pTrophy",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "bay",
+      "deltaPp": -2.2,
+      "metric": "pSemi",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "ars",
+      "deltaPp": 2.4,
+      "metric": "pSemi",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "bar",
+      "deltaPp": -2.1,
+      "metric": "pTrophy",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "ars",
+      "deltaPp": -4.4,
+      "metric": "pHome",
+      "matchId": "ars-lil",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "lil",
+      "deltaPp": 2.6,
+      "metric": "pAway",
+      "matchId": "ars-lil",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "int",
+      "deltaPp": -2.2,
+      "metric": "pHome",
+      "matchId": "int-bru",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "rbl",
+      "deltaPp": 3.5,
+      "metric": "pHome",
+      "matchId": "rbl-psv",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "psv",
+      "deltaPp": -4.2,
+      "metric": "pAway",
+      "matchId": "rbl-psv",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "vil",
+      "deltaPp": 2.2,
+      "metric": "pHome",
+      "matchId": "vil-nap",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "lask",
+      "deltaPp": 2.1,
+      "metric": "pHome",
+      "matchId": "lask-liv",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "avl",
+      "deltaPp": 3.2,
+      "metric": "pHome",
+      "matchId": "avl-fen",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "shk",
+      "deltaPp": -3.3,
+      "metric": "pHome",
+      "matchId": "shk-aek",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "aek",
+      "deltaPp": 2.6,
+      "metric": "pAway",
+      "matchId": "shk-aek",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "psg",
+      "deltaPp": -3.4,
+      "metric": "pAway",
+      "matchId": "mci-psg",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "slo",
+      "deltaPp": -2.5,
+      "metric": "pHome",
+      "matchId": "slo-stu",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.417Z",
+      "teamId": "stu",
+      "deltaPp": 2.4,
+      "metric": "pAway",
+      "matchId": "slo-stu",
+      "reason": "determinism A"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "psg",
+      "deltaPp": -35.4,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "bay",
+      "deltaPp": 2,
+      "metric": "pFinal",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "bay",
+      "deltaPp": -25.4,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "rma",
+      "deltaPp": -46.5,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "liv",
+      "deltaPp": -60.5,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "int",
+      "deltaPp": -65.9,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "mci",
+      "deltaPp": -60.2,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "ars",
+      "deltaPp": -67.4,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "bar",
+      "deltaPp": -57.2,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "atm",
+      "deltaPp": -55.6,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "dor",
+      "deltaPp": -72.8,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "rom",
+      "deltaPp": -53.3,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "spo",
+      "deltaPp": -69.8,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "avl",
+      "deltaPp": -66.7,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "por",
+      "deltaPp": -20.8,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "mun",
+      "deltaPp": -67,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "bru",
+      "deltaPp": -19.2,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "bet",
+      "deltaPp": -56,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "psv",
+      "deltaPp": -31.3,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "fey",
+      "deltaPp": -12.1,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "lil",
+      "deltaPp": -16.4,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "bod",
+      "deltaPp": -3.8,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "nap",
+      "deltaPp": -12,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "rbl",
+      "deltaPp": -10.2,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "vil",
+      "deltaPp": -20,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "fen",
+      "deltaPp": -20.1,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "shk",
+      "deltaPp": -23.9,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "gal",
+      "deltaPp": -8.2,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "slp",
+      "deltaPp": -15.7,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "slo",
+      "deltaPp": -3.3,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "stu",
+      "deltaPp": -35.6,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "aek",
+      "deltaPp": -19.9,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "lask",
+      "deltaPp": -2.7,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "com",
+      "deltaPp": -39.5,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "len",
+      "deltaPp": -23.5,
+      "metric": "pSemi",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "atm",
+      "deltaPp": 2.2,
+      "metric": "pHome",
+      "matchId": "atm-mun",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "avl",
+      "deltaPp": -3.2,
+      "metric": "pHome",
+      "matchId": "avl-fen",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "shk",
+      "deltaPp": 3.3,
+      "metric": "pHome",
+      "matchId": "shk-aek",
+      "reason": "unit test — probability sum gate"
+    },
+    {
+      "timestamp": "2026-09-23T03:44:18.367Z",
+      "teamId": "por",
+      "deltaPp": 2.1,
+      "metric": "pAway",
+      "matchId": "bet-por",
+      "reason": "unit test — probability sum gate"
+    },
     {
       "timestamp": "2026-09-23T03:35:01.997Z",
       "teamId": "psg",
@@ -721,506 +1464,6 @@
       "deltaPp": -11.1,
       "metric": "pFinal",
       "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "fen",
-      "deltaPp": -2.6,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "shk",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "shk",
-      "deltaPp": -11,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "shk",
-      "deltaPp": 2.6,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "gal",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "gal",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "gal",
-      "deltaPp": -14,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slp",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slp",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slp",
-      "deltaPp": -5.2,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slo",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slo",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slo",
-      "deltaPp": -18.7,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "stu",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "stu",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "stu",
-      "deltaPp": 13.5,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "aek",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "aek",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "lask",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "lask",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "lask",
-      "deltaPp": -19.4,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "com",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "com",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "com",
-      "deltaPp": 17.4,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "len",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "len",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "vik",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "vik",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "vik",
-      "deltaPp": -21,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "sab",
-      "deltaPp": -2.8,
-      "metric": "pTrophy",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "sab",
-      "deltaPp": -11.1,
-      "metric": "pFinal",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "sab",
-      "deltaPp": -21.2,
-      "metric": "pSemi",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "len",
-      "deltaPp": -11.2,
-      "metric": "pHome",
-      "matchId": "len-spo",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "spo",
-      "deltaPp": 17,
-      "metric": "pAway",
-      "matchId": "len-spo",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "sab",
-      "deltaPp": -13,
-      "metric": "pHome",
-      "matchId": "sab-slp",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slp",
-      "deltaPp": 16.6,
-      "metric": "pAway",
-      "matchId": "sab-slp",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "ars",
-      "deltaPp": 37.5,
-      "metric": "pHome",
-      "matchId": "ars-lil",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "lil",
-      "deltaPp": -27.6,
-      "metric": "pAway",
-      "matchId": "ars-lil",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "atm",
-      "deltaPp": 7.1,
-      "metric": "pHome",
-      "matchId": "atm-mun",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "mun",
-      "deltaPp": -5.3,
-      "metric": "pAway",
-      "matchId": "atm-mun",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "int",
-      "deltaPp": 36.9,
-      "metric": "pHome",
-      "matchId": "int-bru",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "bru",
-      "deltaPp": -26.8,
-      "metric": "pAway",
-      "matchId": "int-bru",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "gal",
-      "deltaPp": -24.5,
-      "metric": "pHome",
-      "matchId": "gal-bar",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "bar",
-      "deltaPp": 36.8,
-      "metric": "pAway",
-      "matchId": "gal-bar",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "rbl",
-      "deltaPp": -2.6,
-      "metric": "pHome",
-      "matchId": "rbl-psv",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "vik",
-      "deltaPp": -32.5,
-      "metric": "pHome",
-      "matchId": "vik-bay",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "bay",
-      "deltaPp": 56.2,
-      "metric": "pAway",
-      "matchId": "vik-bay",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "vil",
-      "deltaPp": 9.1,
-      "metric": "pHome",
-      "matchId": "vil-nap",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "nap",
-      "deltaPp": -10.2,
-      "metric": "pAway",
-      "matchId": "vil-nap",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "fey",
-      "deltaPp": 2.2,
-      "metric": "pHome",
-      "matchId": "fey-com",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "lask",
-      "deltaPp": -26.6,
-      "metric": "pHome",
-      "matchId": "lask-liv",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "liv",
-      "deltaPp": 42.4,
-      "metric": "pAway",
-      "matchId": "lask-liv",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "rom",
-      "deltaPp": -13.6,
-      "metric": "pHome",
-      "matchId": "rom-rma",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "rma",
-      "deltaPp": 21,
-      "metric": "pAway",
-      "matchId": "rom-rma",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "avl",
-      "deltaPp": 22.7,
-      "metric": "pHome",
-      "matchId": "avl-fen",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "fen",
-      "deltaPp": -18.3,
-      "metric": "pAway",
-      "matchId": "avl-fen",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "shk",
-      "deltaPp": 11.2,
-      "metric": "pHome",
-      "matchId": "shk-aek",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "aek",
-      "deltaPp": -12.1,
-      "metric": "pAway",
-      "matchId": "shk-aek",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "bod",
-      "deltaPp": -20.7,
-      "metric": "pHome",
-      "matchId": "bod-dor",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "dor",
-      "deltaPp": 29,
-      "metric": "pAway",
-      "matchId": "bod-dor",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "mci",
-      "deltaPp": -3.6,
-      "metric": "pHome",
-      "matchId": "mci-psg",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "psg",
-      "deltaPp": 8.9,
-      "metric": "pAway",
-      "matchId": "mci-psg",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "bet",
-      "deltaPp": 13.1,
-      "metric": "pHome",
-      "matchId": "bet-por",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "por",
-      "deltaPp": -11.8,
-      "metric": "pAway",
-      "matchId": "bet-por",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "slo",
-      "deltaPp": -6.1,
-      "metric": "pHome",
-      "matchId": "slo-stu",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:34:55.728Z",
-      "teamId": "stu",
-      "deltaPp": 9.4,
-      "metric": "pAway",
-      "matchId": "slo-stu",
-      "reason": "unit test — probability sum gate"
-    },
-    {
-      "timestamp": "2026-09-23T03:25:09Z",
-      "reason": "Scout replaced demo QF with real 2026/27 league-phase MD1+MD2 (public UEFA/Wikipedia)"
     }
   ]
 }

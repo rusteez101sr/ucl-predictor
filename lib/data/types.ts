@@ -42,7 +42,13 @@ export type MatchProb = {
 
 export type StageProb = {
   teamId: string;
+  /** P(finish top 24) — league phase only. */
+  pKnockout?: number;
+  /** P(reach round of 16). */
+  pR16?: number;
+  /** P(reach quarter-finals). */
   pQuarter: number;
+  /** P(reach semi-finals). */
   pSemi: number;
   pFinal: number;
   pTrophy: number;

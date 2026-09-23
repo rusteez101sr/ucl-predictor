@@ -145,5 +145,5 @@ export function sumStage(
   stage: StageProbabilities[],
   key: keyof Omit<StageProbabilities, "teamId">
 ): number {
-  return stage.reduce((acc, row) => acc + row[key], 0);
+  return stage.reduce((acc, row) => acc + (Number(row[key]) || 0), 0);
 }

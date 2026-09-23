@@ -11,11 +11,13 @@
  * simulated as matches against a league-average opponent so every club
  * still reaches 8 matches.
  *
- * Stage field mapping (reuse existing UI keys):
- * - pQuarter ≈ P(finish ≤24) — make the knockout phase at all
- * - pSemi    ≈ P(reach R16)
- * - pFinal   ≈ P(reach final)
- * - pTrophy  ≈ P(win the trophy)
+ * Stage fields (true path probabilities):
+ * - pKnockout = P(finish ≤24)
+ * - pR16      = P(reach round of 16)
+ * - pQuarter  = P(reach quarter-finals)
+ * - pSemi     = P(reach semi-finals)
+ * - pFinal    = P(reach final)
+ * - pTrophy   = P(win the trophy)
  */
 
 import {
@@ -142,22 +144,32 @@ function knockoutFromR16(
   orderedR16: string[],
   map: Map<string, TeamRatings>,
   rng: Rng
-): { finalists: [string, string]; champion: string } {
+): {
+  /** Won R16 → reached quarter-finals (8 teams). */
+  quarter: string[];
+  /** Won QF → reached semi-finals (4 teams). */
+  semi: string[];
+  finalists: [string, string];
+  champion: string;
+} {
   const play = (a: string, b: string) => {
     const { aAdvances } = simulateTwoLeggedTie(map.get(a)!, map.get(b)!, rng);
     return aAdvances ? a : b;
   };
 
-  const qf: string[] = [];
+  // R16 → 8 quarter-finalists
+  const quarter: string[] = [];
   for (let i = 0; i < 8; i++) {
-    qf.push(play(orderedR16[i], orderedR16[15 - i]));
+    quarter.push(play(orderedR16[i], orderedR16[15 - i]));
   }
-  const sf: string[] = [];
+  // QF → 4 semi-finalists
+  const semi: string[] = [];
   for (let i = 0; i < 4; i++) {
-    sf.push(play(qf[i], qf[7 - i]));
+    semi.push(play(quarter[i], quarter[7 - i]));
   }
-  const f0 = play(sf[0], sf[3]);
-  const f1 = play(sf[1], sf[2]);
+  // SF → finalists
+  const f0 = play(semi[0], semi[3]);
+  const f1 = play(semi[1], semi[2]);
 
   const sideA = map.get(f0)!;
   const sideB = map.get(f1)!;
@@ -168,7 +180,12 @@ function knockoutFromR16(
     if (rng() < 0.5) gA++;
     else gB++;
   }
-  return { finalists: [f0, f1], champion: gA > gB ? f0 : f1 };
+  return {
+    quarter,
+    semi,
+    finalists: [f0, f1],
+    champion: gA > gB ? f0 : f1,
+  };
 }
 
 export function simulateLeaguePhaseTournament(
@@ -184,10 +201,24 @@ export function simulateLeaguePhaseTournament(
 
   const counts: Record<
     string,
-    { quarter: number; semi: number; final: number; trophy: number }
+    {
+      knockout: number;
+      r16: number;
+      quarter: number;
+      semi: number;
+      final: number;
+      trophy: number;
+    }
   > = {};
   for (const id of ids) {
-    counts[id] = { quarter: 0, semi: 0, final: 0, trophy: 0 };
+    counts[id] = {
+      knockout: 0,
+      r16: 0,
+      quarter: 0,
+      semi: 0,
+      final: 0,
+      trophy: 0,
+    };
   }
 
   for (let iter = 0; iter < iterations; iter++) {
@@ -216,7 +247,8 @@ export function simulateLeaguePhaseTournament(
     }
 
     const order = sortedIds(table, ids);
-    for (const id of order.slice(0, 24)) counts[id].quarter++;
+    // Top 24 make the knockout phase (playoffs or better).
+    for (const id of order.slice(0, 24)) counts[id].knockout++;
 
     const direct = order.slice(0, 8);
     const playoff = order.slice(8, 24);
@@ -232,9 +264,15 @@ export function simulateLeaguePhaseTournament(
       playoffWinners.push(aAdvances ? a : b);
     }
     const r16 = [...direct, ...playoffWinners];
-    for (const id of r16) counts[id].semi++;
+    for (const id of r16) counts[id].r16++;
 
-    const { finalists, champion } = knockoutFromR16(r16, map, rng);
+    const { quarter, semi, finalists, champion } = knockoutFromR16(
+      r16,
+      map,
+      rng
+    );
+    for (const id of quarter) counts[id].quarter++;
+    for (const id of semi) counts[id].semi++;
     counts[finalists[0]].final++;
     counts[finalists[1]].final++;
     counts[champion].trophy++;
@@ -242,6 +280,9 @@ export function simulateLeaguePhaseTournament(
 
   const stage: StageProbabilities[] = ids.map((teamId) => ({
     teamId,
+    pKnockout: counts[teamId].knockout / iterations,
+    pR16: counts[teamId].r16 / iterations,
+    // True path probs — UI "Quarter/Semi" bars now mean real QF/SF.
     pQuarter: counts[teamId].quarter / iterations,
     pSemi: counts[teamId].semi / iterations,
     pFinal: counts[teamId].final / iterations,

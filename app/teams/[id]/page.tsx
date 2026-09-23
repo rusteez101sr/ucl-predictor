@@ -69,8 +69,14 @@ export default async function TeamDetailPage({
           <div className="space-y-4">
             <ProbabilityBar label="Trophy" value={stage.pTrophy} />
             <ProbabilityBar label="Final" value={stage.pFinal} />
-            <ProbabilityBar label="Semi" value={stage.pSemi} />
-            <ProbabilityBar label="Quarter" value={stage.pQuarter} />
+            <ProbabilityBar label="Semi-final" value={stage.pSemi} />
+            <ProbabilityBar label="Quarter-final" value={stage.pQuarter} />
+            {stage.pR16 != null && (
+              <ProbabilityBar label="Round of 16" value={stage.pR16} />
+            )}
+            {stage.pKnockout != null && (
+              <ProbabilityBar label="Make KO phase" value={stage.pKnockout} />
+            )}
           </div>
         )}
       </section>
