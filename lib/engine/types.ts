@@ -63,11 +63,32 @@ export interface MatchProbabilities {
   lambdaAway: number;
 }
 
+/**
+ * Path probabilities. All are "reach this round" except pTrophy (win it).
+ *
+ * Legacy UI keys (Quarter/Semi/Final/Trophy bars):
+ * - pQuarter = P(reach quarter-finals)
+ * - pSemi    = P(reach semi-finals)
+ * - pFinal   = P(reach final)
+ * - pTrophy  = P(win trophy)
+ *
+ * Extra league-phase fields:
+ * - pKnockout = P(finish top 24 / make KO playoffs+)
+ * - pR16      = P(reach round of 16)
+ */
 export interface StageProbabilities {
   teamId: string;
+  /** P(finish ≤24) — make knockout phase at all (league phase only). */
+  pKnockout?: number;
+  /** P(reach round of 16). */
+  pR16?: number;
+  /** P(reach quarter-finals). */
   pQuarter: number;
+  /** P(reach semi-finals). */
   pSemi: number;
+  /** P(reach final). */
   pFinal: number;
+  /** P(win the trophy). */
   pTrophy: number;
 }
 
