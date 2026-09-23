@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T03:47:55Z",
-  "reason": "richer form: OpenLigaDB Bundesliga last matches + public UCL 2024-25/2025-26 league-phase GF/GA; injuries sparse on free tier",
+  "timestamp": "2026-09-23T04:00:51Z",
+  "reason": "free domestic form: football-data.co.uk 2026-27 CSVs for EPL/LaLiga/SerieA/Ligue1 UCL clubs (keep OpenLigaDB Bundesliga); injuries still empty — no free no-key feed",
   "demo": false,
   "teams": [
     {
@@ -15,7 +15,11 @@
       "pot": 1,
       "ucl2yGf": 46,
       "ucl2yGa": 21,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 8,
+      "domesticGaLast10": 7,
+      "domesticPlayed": 5,
+      "domesticLeague": "Ligue 1"
     },
     {
       "id": "bay",
@@ -47,7 +51,11 @@
       "pot": 1,
       "ucl2yGf": 41,
       "ucl2yGa": 27,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 18,
+      "domesticGaLast10": 8,
+      "domesticPlayed": 7,
+      "domesticLeague": "La Liga"
     },
     {
       "id": "liv",
@@ -61,7 +69,11 @@
       "pot": 1,
       "ucl2yGf": 37,
       "ucl2yGa": 14,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 7,
+      "domesticGaLast10": 4,
+      "domesticPlayed": 5,
+      "domesticLeague": "Premier League"
     },
     {
       "id": "int",
@@ -75,7 +87,11 @@
       "pot": 1,
       "ucl2yGf": 26,
       "ucl2yGa": 9,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 15,
+      "domesticGaLast10": 8,
+      "domesticPlayed": 5,
+      "domesticLeague": "Serie A"
     },
     {
       "id": "mci",
@@ -89,7 +105,11 @@
       "pot": 1,
       "ucl2yGf": 32,
       "ucl2yGa": 18,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 13,
+      "domesticGaLast10": 5,
+      "domesticPlayed": 5,
+      "domesticLeague": "Premier League"
     },
     {
       "id": "ars",
@@ -103,7 +123,11 @@
       "pot": 1,
       "ucl2yGf": 39,
       "ucl2yGa": 8,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 8,
+      "domesticGaLast10": 4,
+      "domesticPlayed": 5,
+      "domesticLeague": "Premier League"
     },
     {
       "id": "bar",
@@ -117,7 +141,11 @@
       "pot": 1,
       "ucl2yGf": 50,
       "ucl2yGa": 27,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 31,
+      "domesticGaLast10": 7,
+      "domesticPlayed": 7,
+      "domesticLeague": "La Liga"
     },
     {
       "id": "atm",
@@ -131,7 +159,11 @@
       "pot": 1,
       "ucl2yGf": 37,
       "ucl2yGa": 30,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 16,
+      "domesticGaLast10": 7,
+      "domesticPlayed": 7,
+      "domesticLeague": "La Liga"
     },
     {
       "id": "dor",
@@ -163,7 +195,11 @@
       "pot": 2,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 14,
+      "domesticGaLast10": 3,
+      "domesticPlayed": 5,
+      "domesticLeague": "Serie A"
     },
     {
       "id": "spo",
@@ -191,7 +227,11 @@
       "pot": 2,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 4,
+      "domesticGaLast10": 9,
+      "domesticPlayed": 5,
+      "domesticLeague": "Premier League"
     },
     {
       "id": "por",
@@ -219,7 +259,11 @@
       "pot": 2,
       "ucl2yGf": 16,
       "ucl2yGa": 16,
-      "ucl2ySeasons": 1
+      "ucl2ySeasons": 1,
+      "domesticGfLast10": 8,
+      "domesticGaLast10": 8,
+      "domesticPlayed": 5,
+      "domesticLeague": "Premier League"
     },
     {
       "id": "bru",
@@ -247,7 +291,11 @@
       "pot": 2,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 9,
+      "domesticGaLast10": 7,
+      "domesticPlayed": 7,
+      "domesticLeague": "La Liga"
     },
     {
       "id": "psv",
@@ -289,7 +337,11 @@
       "pot": 3,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 8,
+      "domesticGaLast10": 4,
+      "domesticPlayed": 5,
+      "domesticLeague": "Ligue 1"
     },
     {
       "id": "bod",
@@ -317,7 +369,11 @@
       "pot": 3,
       "ucl2yGf": 19,
       "ucl2yGa": 31,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 7,
+      "domesticGaLast10": 6,
+      "domesticPlayed": 5,
+      "domesticLeague": "Serie A"
     },
     {
       "id": "rbl",
@@ -349,7 +405,11 @@
       "pot": 3,
       "ucl2yGf": 19,
       "ucl2yGa": 32,
-      "ucl2ySeasons": 2
+      "ucl2ySeasons": 2,
+      "domesticGfLast10": 13,
+      "domesticGaLast10": 12,
+      "domesticPlayed": 7,
+      "domesticLeague": "La Liga"
     },
     {
       "id": "fen",
@@ -479,7 +539,11 @@
       "pot": 4,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 9,
+      "domesticGaLast10": 6,
+      "domesticPlayed": 5,
+      "domesticLeague": "Serie A"
     },
     {
       "id": "len",
@@ -493,7 +557,11 @@
       "pot": 4,
       "ucl2yGf": 0,
       "ucl2yGa": 0,
-      "ucl2ySeasons": 0
+      "ucl2ySeasons": 0,
+      "domesticGfLast10": 9,
+      "domesticGaLast10": 9,
+      "domesticPlayed": 5,
+      "domesticLeague": "Ligue 1"
     },
     {
       "id": "vik",
