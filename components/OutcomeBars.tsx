@@ -1,4 +1,4 @@
-import { pct } from "@/lib/data/format";
+import { barWidth, pct } from "@/lib/data/format";
 
 export function OutcomeBars({
   pHome,
@@ -29,7 +29,7 @@ export function OutcomeBars({
           <div className="h-1.5 overflow-hidden rounded-full bg-night-700">
             <div
               className={`h-full rounded-full ${r.tone}`}
-              style={{ width: `${Math.max(2, r.value * 100)}%` }}
+              style={{ width: barWidth(r.value) }}
             />
           </div>
         </div>

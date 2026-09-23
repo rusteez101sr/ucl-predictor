@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { EmptyState } from "@/components/EmptyState";
 import { UpdatedLabel } from "@/components/UpdatedLabel";
-import { pct } from "@/lib/data/format";
+import { barWidth, pct } from "@/lib/data/format";
 import {
   loadBracket,
   loadFixtures,
@@ -86,11 +86,11 @@ export default async function BracketPage() {
                   <div className="flex h-2 overflow-hidden rounded-full bg-night-700">
                     <div
                       className="h-full bg-cl-blue"
-                      style={{ width: `${pHome * 100}%` }}
+                      style={{ width: barWidth(pHome, 0) }}
                     />
                     <div
                       className="h-full bg-cl-blue-dim/70"
-                      style={{ width: `${pAway * 100}%` }}
+                      style={{ width: barWidth(pAway, 0) }}
                     />
                   </div>
                   <div className="flex items-center justify-between gap-3">
