@@ -1,5 +1,71 @@
 {
-  "timestamp": "2026-09-22T21:30:00-05:00",
-  "reason": "demo seed — empty what-changed feed",
-  "entries": []
+  "timestamp": "2026-09-23T02:48:10.310Z",
+  "reason": "demo: key attacker unavailable (synthetic availability modifier)",
+  "entries": [
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "rma",
+      "deltaPp": 3,
+      "metric": "pTrophy",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "rma",
+      "deltaPp": 4.6,
+      "metric": "pFinal",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "mci",
+      "deltaPp": -7.2,
+      "metric": "pTrophy",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "mci",
+      "deltaPp": -8.9,
+      "metric": "pFinal",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "mci",
+      "deltaPp": -7.9,
+      "metric": "pSemi",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "int",
+      "deltaPp": 2.5,
+      "metric": "pFinal",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "int",
+      "deltaPp": 7.9,
+      "metric": "pSemi",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "mci",
+      "deltaPp": -8.6,
+      "metric": "pHome",
+      "matchId": "mci-int",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    },
+    {
+      "timestamp": "2026-09-23T02:48:10.309Z",
+      "teamId": "int",
+      "deltaPp": 5,
+      "metric": "pAway",
+      "matchId": "mci-int",
+      "reason": "demo: key attacker unavailable (synthetic availability modifier)"
+    }
+  ]
 }
