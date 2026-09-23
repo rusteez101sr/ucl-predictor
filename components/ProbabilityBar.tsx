@@ -1,4 +1,4 @@
-import { pct } from "@/lib/data/format";
+import { barWidth, pct } from "@/lib/data/format";
 
 export function ProbabilityBar({
   label,
@@ -9,7 +9,6 @@ export function ProbabilityBar({
   value: number;
   rank?: number;
 }) {
-  const width = Math.max(2, Math.min(100, value * 100));
   return (
     <div className="group">
       <div className="mb-1 flex items-baseline justify-between gap-3">
@@ -30,7 +29,7 @@ export function ProbabilityBar({
       <div className="h-2 overflow-hidden rounded-full bg-night-700">
         <div
           className="h-full rounded-full bg-gradient-to-r from-cl-blue-dim to-cl-blue transition-[width] duration-700 ease-out"
-          style={{ width: `${width}%` }}
+          style={{ width: barWidth(value) }}
         />
       </div>
     </div>
