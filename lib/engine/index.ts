@@ -14,6 +14,7 @@ import { simulateTournament } from "./montecarlo";
 import { simulateMatch } from "./poisson";
 import {
   applyAvailabilityModifier,
+  applyResultsToElo,
   buildRatings,
 } from "./ratings";
 import { makeRng } from "./rng";
@@ -37,6 +38,7 @@ export {
   buildRatings,
   applyAvailabilityModifier,
   updateElo,
+  applyResultsToElo,
   LEAGUE_AVG_GOALS,
 } from "./ratings";
 export { simulateMatch, expectedGoals, simulateTwoLeggedTie } from "./poisson";
@@ -132,7 +134,9 @@ export function runEngine(opts: {
 
   const previous = loadPreviousProbabilities(root);
 
-  let ratings = buildRatings(loadTeams(root));
+  // Replay known results into Elo so strength reflects MD form, not just seeds.
+  const teamsWithElo = applyResultsToElo(loadTeams(root), loadResults(root));
+  let ratings = buildRatings(teamsWithElo);
   for (const mod of opts.availability ?? []) {
     ratings = applyAvailabilityModifier(ratings, mod);
   }

@@ -7,6 +7,23 @@ export type Team = {
   gaLast10?: number;
   xgForLast10?: number;
   xgAgainstLast10?: number;
+  /** Domestic league GF over recent matches (sparse — Bundesliga only for now). */
+  domesticGfLast10?: number;
+  domesticGaLast10?: number;
+  domesticPlayed?: number;
+  domesticLeague?: string;
+  /** Combined UCL league-phase GF/GA over last two seasons. */
+  ucl2yGf?: number;
+  ucl2yGa?: number;
+  ucl2ySeasons?: number;
+};
+
+export type InjuriesFile = {
+  timestamp?: string;
+  reason?: string;
+  demo?: boolean;
+  injuries: unknown[];
+  gaps?: string[];
 };
 
 export type Fixture = {

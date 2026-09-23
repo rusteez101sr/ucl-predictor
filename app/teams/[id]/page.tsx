@@ -6,6 +6,7 @@ import { UpdatedLabel } from "@/components/UpdatedLabel";
 import { formatKickoff } from "@/lib/data/format";
 import {
   loadFixtures,
+  loadInjuries,
   loadProbabilities,
   loadTeams,
   teamMap,
@@ -23,10 +24,11 @@ export default async function TeamDetailPage({
 }: {
   params: { id: string };
 }) {
-  const [teamsData, probs, fixturesData] = await Promise.all([
+  const [teamsData, probs, fixturesData, injuries] = await Promise.all([
     loadTeams(),
     loadProbabilities(),
     loadFixtures(),
+    loadInjuries(),
   ]);
   const team = teamsData.teams.find((t) => t.id === params.id);
   if (!team) notFound();
@@ -83,12 +85,47 @@ export default async function TeamDetailPage({
 
       <section className="rounded-2xl border border-white/5 bg-night-850/70 p-5">
         <h2 className="mb-3 font-display text-lg font-semibold text-cl-white">
-          Rating snapshot
+          Form inputs
         </h2>
-        <p className="text-sm text-cl-muted">
-          Last 10: {team.gfLast10 ?? "—"} GF / {team.gaLast10 ?? "—"} GA. Rating
-          history chart will use Recharts once time-series Elo is in /data.
-        </p>
+        <ul className="space-y-2 text-sm text-cl-muted">
+          <li>
+            <span className="text-cl-white">Recent UCL sample:</span>{" "}
+            {team.gfLast10 ?? "—"} GF / {team.gaLast10 ?? "—"} GA
+            {team.xgForLast10 != null
+              ? ` · xG ${team.xgForLast10}/${team.xgAgainstLast10 ?? "—"}`
+              : ""}
+          </li>
+          <li>
+            <span className="text-cl-white">UCL last 2 seasons:</span>{" "}
+            {team.ucl2yGf != null
+              ? `${team.ucl2yGf} GF / ${team.ucl2yGa ?? "—"} GA (${team.ucl2ySeasons ?? 2} seasons)`
+              : "not in free slate yet"}
+          </li>
+          <li>
+            <span className="text-cl-white">Domestic form:</span>{" "}
+            {team.domesticGfLast10 != null
+              ? `${team.domesticLeague ?? "Domestic"} — ${team.domesticGfLast10} GF / ${team.domesticGaLast10 ?? "—"} GA (${team.domesticPlayed ?? "?"} played)`
+              : "not covered on free feeds (Bundesliga only so far; weight drops when sparse)"}
+          </li>
+          <li>
+            <span className="text-cl-white">Injuries:</span>{" "}
+            {injuries.injuries.length > 0
+              ? `${injuries.injuries.length} listed`
+              : "none on free tier — treated as no signal"}
+          </li>
+        </ul>
+        {injuries.gaps && injuries.gaps.length > 0 && (
+          <div className="mt-4 rounded-xl border border-white/5 bg-night-900/60 p-3">
+            <p className="text-xs font-medium uppercase tracking-wider text-cl-gold">
+              Labeled gaps
+            </p>
+            <ul className="mt-2 list-disc space-y-1 pl-4 text-xs text-cl-muted">
+              {injuries.gaps.map((g) => (
+                <li key={g}>{g}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </section>
 
       <section>

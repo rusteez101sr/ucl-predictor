@@ -6,6 +6,7 @@ import type {
   Probabilities,
   Team,
   UpdateEntry,
+  InjuriesFile,
 } from "./types";
 
 const dataDir = path.join(process.cwd(), "data");
@@ -102,4 +103,18 @@ export function teamMap(teams: Team[]): Map<string, Team> {
 
 export function teamName(map: Map<string, Team>, id: string): string {
   return map.get(id)?.name ?? id.toUpperCase();
+}
+
+export async function loadInjuries(): Promise<InjuriesFile> {
+  const data = await readJson<InjuriesFile>("injuries.json", {
+    injuries: [],
+    gaps: [],
+  });
+  return {
+    timestamp: data.timestamp,
+    reason: data.reason,
+    demo: data.demo,
+    injuries: Array.isArray(data.injuries) ? data.injuries : [],
+    gaps: Array.isArray(data.gaps) ? data.gaps : [],
+  };
 }

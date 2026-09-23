@@ -197,6 +197,38 @@ export function applyAvailabilityModifier(
 /**
  * Elo update after a real result (standard logistic, K=20 for club comps).
  */
+
+/**
+ * Replay finished results into Elo (chronological) before ratings are built.
+ * Does not mutate /data — returns a shallow-copied team list with updated elo.
+ */
+export function applyResultsToElo(
+  teams: TeamInput[],
+  results: Array<{
+    homeId: string;
+    awayId: string;
+    homeGoals: number;
+    awayGoals: number;
+    date?: string;
+  }>,
+  k = 20
+): TeamInput[] {
+  const copy = teams.map((t) => ({ ...t }));
+  const byId = new Map(copy.map((t) => [t.id, t]));
+  const ordered = [...results].sort((a, b) =>
+    (a.date ?? "").localeCompare(b.date ?? "")
+  );
+  for (const r of ordered) {
+    const home = byId.get(r.homeId);
+    const away = byId.get(r.awayId);
+    if (!home || !away) continue;
+    const next = updateElo(home.elo, away.elo, r.homeGoals, r.awayGoals, k);
+    home.elo = next.homeElo;
+    away.elo = next.awayElo;
+  }
+  return copy;
+}
+
 export function updateElo(
   homeElo: number,
   awayElo: number,
