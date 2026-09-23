@@ -23,7 +23,7 @@ Live **league phase** slate (not the old demo QF): 36 teams, MD1 results, MD2 fi
 
 ## Richer form inputs (free-only)
 
-- `form-domestic.json` — OpenLigaDB Bundesliga (bay/dor/rbl/stu) + football-data.co.uk 2026-27 CSVs for EPL/LaLiga/SerieA/Ligue1 UCL clubs (21/36 teams with `domestic*`)
+- `form-domestic.json` — OpenLigaDB Bundesliga + football-data.co.uk 2026-27 CSVs for Big-5 and P1/N1/B1/T1/G1 + NOR/AUT extras; Wikipedia/table GF/GA proxy for Shakhtar/Slavia/Slovan/Sabah (36/36 teams with `domestic*`)
 - `form-ucl-2y.json` — UCL league-phase GF/GA for 2024-25 + 2025-26 (public Wikipedia tables)
 - `injuries.json` — empty; no free injury feed without signup (gap labeled)
-- Teams carry `domesticGfLast10` / `ucl2yGf` fields for Professor ratings; domestic weight should stay coverage-scaled until non-Big-4 leagues are filled
+- Teams carry `domesticGfLast10` / `ucl2yGf` fields for Professor ratings; domestic coverage now 36/36 (wikipedia/table proxies labeled weaker for shk/slp/slo/sab)

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T04:00:51Z",
-  "reason": "free domestic form: football-data.co.uk 2026-27 CSVs for EPL/LaLiga/SerieA/Ligue1 UCL clubs (keep OpenLigaDB Bundesliga); injuries still empty — no free no-key feed",
+  "timestamp": "2026-09-23T04:07:29Z",
+  "reason": "free domestic form for remaining non–Big-5 UCL clubs: football-data.co.uk 2627 (P1/N1/B1/T1/G1) + new/ NOR+AUT 2026; Wikipedia league-table GF/GA proxy for Shakhtar/Slavia/Slovan/Sabah; injuries still empty — no free no-key feed",
   "demo": false,
   "teams": {
     "bay": {
@@ -1190,6 +1190,852 @@
       "gfLast10": 8,
       "gaLast10": 7,
       "played": 5
+    },
+    "spo": {
+      "league": "Primeira Liga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-08",
+          "opponent": "Estrela",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-14",
+          "opponent": "Guimaraes",
+          "gf": 3,
+          "ga": 2,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-22",
+          "opponent": "Alverca",
+          "gf": 3,
+          "ga": 1,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-28",
+          "opponent": "Rio Ave",
+          "gf": 4,
+          "ga": 0,
+          "home": false,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Nacional",
+          "gf": 2,
+          "ga": 0,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Famalicao",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Arouca",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 17,
+      "gaLast10": 8,
+      "played": 7
+    },
+    "por": {
+      "league": "Primeira Liga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-09",
+          "opponent": "Alverca",
+          "gf": 2,
+          "ga": 0,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-15",
+          "opponent": "Rio Ave",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "Arouca",
+          "gf": 2,
+          "ga": 0,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Academico Viseu",
+          "gf": 3,
+          "ga": 0,
+          "home": false,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Moreirense",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "Casa Pia",
+          "gf": 4,
+          "ga": 1,
+          "home": false,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Benfica",
+          "gf": 3,
+          "ga": 1,
+          "home": true,
+          "competition": "Primeira Liga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 18,
+      "gaLast10": 3,
+      "played": 7
+    },
+    "bru": {
+      "league": "Belgian Pro League",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-07",
+          "opponent": "Kortrijk",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Belgian Pro League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-15",
+          "opponent": "Oud-Heverlee Leuven",
+          "gf": 3,
+          "ga": 0,
+          "home": false,
+          "competition": "Belgian Pro League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "Cercle Brugge",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "Belgian Pro League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Gent",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Belgian Pro League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Lommel SK",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Belgian Pro League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Antwerp",
+          "gf": 3,
+          "ga": 1,
+          "home": true,
+          "competition": "Belgian Pro League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Genk",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Belgian Pro League",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 15,
+      "gaLast10": 3,
+      "played": 7
+    },
+    "psv": {
+      "league": "Eredivisie",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-08",
+          "opponent": "For Sittard",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-15",
+          "opponent": "Excelsior",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "Groningen",
+          "gf": 5,
+          "ga": 1,
+          "home": true,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Utrecht",
+          "gf": 6,
+          "ga": 1,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Ajax",
+          "gf": 3,
+          "ga": 1,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Sparta Rotterdam",
+          "gf": 4,
+          "ga": 1,
+          "home": true,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Twente",
+          "gf": 2,
+          "ga": 3,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 24,
+      "gaLast10": 10,
+      "played": 7
+    },
+    "fey": {
+      "league": "Eredivisie",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-09",
+          "opponent": "Sparta Rotterdam",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-16",
+          "opponent": "Go Ahead Eagles",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "Cambuur",
+          "gf": 5,
+          "ga": 2,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Den Haag",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Nijmegen",
+          "gf": 3,
+          "ga": 1,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Zwolle",
+          "gf": 7,
+          "ga": 0,
+          "home": false,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Utrecht",
+          "gf": 5,
+          "ga": 0,
+          "home": true,
+          "competition": "Eredivisie",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 25,
+      "gaLast10": 7,
+      "played": 7
+    },
+    "fen": {
+      "league": "Süper Lig",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-15",
+          "opponent": "Genclerbirligi",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-22",
+          "opponent": "Konyaspor",
+          "gf": 4,
+          "ga": 2,
+          "home": true,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Samsunspor",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Besiktas",
+          "gf": 1,
+          "ga": 2,
+          "home": true,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-14",
+          "opponent": "Gaziantep",
+          "gf": 0,
+          "ga": 0,
+          "home": false,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Eyupspor",
+          "gf": 8,
+          "ga": 0,
+          "home": true,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 16,
+      "gaLast10": 6,
+      "played": 6
+    },
+    "gal": {
+      "league": "Süper Lig",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-14",
+          "opponent": "Corum",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-21",
+          "opponent": "Erzurumspor",
+          "gf": 4,
+          "ga": 0,
+          "home": false,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Goztep",
+          "gf": 3,
+          "ga": 2,
+          "home": true,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Buyuksehyr",
+          "gf": 3,
+          "ga": 2,
+          "home": false,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Kocaelispor",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Trabzonspor",
+          "gf": 0,
+          "ga": 4,
+          "home": false,
+          "competition": "Süper Lig",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 13,
+      "gaLast10": 10,
+      "played": 6
+    },
+    "aek": {
+      "league": "Super League Greece",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Iraklis",
+          "gf": 4,
+          "ga": 0,
+          "home": true,
+          "competition": "Super League Greece",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Kifisia",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Super League Greece",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Aris",
+          "gf": 5,
+          "ga": 0,
+          "home": true,
+          "competition": "Super League Greece",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Asteras Tripolis",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Super League Greece",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Volos NFC",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Super League Greece",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 13,
+      "gaLast10": 3,
+      "played": 5
+    },
+    "bod": {
+      "league": "Eliteserien",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-07-12",
+          "opponent": "KFUM Oslo",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-07-17",
+          "opponent": "Fredrikstad",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-07-22",
+          "opponent": "HamKam",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-07-26",
+          "opponent": "Sandefjord",
+          "gf": 3,
+          "ga": 0,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-07-31",
+          "opponent": "Lillestrom",
+          "gf": 4,
+          "ga": 0,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-08",
+          "opponent": "Valerenga",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Rosenborg",
+          "gf": 4,
+          "ga": 2,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Fredrikstad",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-14",
+          "opponent": "Sandefjord",
+          "gf": 3,
+          "ga": 2,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Brann",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 25,
+      "gaLast10": 8,
+      "played": 10
+    },
+    "vik": {
+      "league": "Eliteserien",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-07-18",
+          "opponent": "Sandefjord",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-07-22",
+          "opponent": "Lillestrom",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-07-26",
+          "opponent": "Aalesund",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-01",
+          "opponent": "Start",
+          "gf": 3,
+          "ga": 0,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-08",
+          "opponent": "Sarpsborg 08",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-14",
+          "opponent": "Rosenborg",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Aalesund",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Sandefjord",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Kristiansund",
+          "gf": 8,
+          "ga": 1,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Lillestrom",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Eliteserien",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 25,
+      "gaLast10": 9,
+      "played": 10
+    },
+    "lask": {
+      "league": "Austrian Bundesliga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-07-31",
+          "opponent": "Grazer AK",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Austrian Bundesliga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-09",
+          "opponent": "Austria Vienna",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Austrian Bundesliga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-14",
+          "opponent": "Ried",
+          "gf": 4,
+          "ga": 1,
+          "home": true,
+          "competition": "Austrian Bundesliga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Altach",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Austrian Bundesliga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-01",
+          "opponent": "Wolfsberger AC",
+          "gf": 3,
+          "ga": 1,
+          "home": false,
+          "competition": "Austrian Bundesliga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Sturm Graz",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Austrian Bundesliga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Hartberg",
+          "gf": 3,
+          "ga": 3,
+          "home": false,
+          "competition": "Austrian Bundesliga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 19,
+      "gaLast10": 7,
+      "played": 7
+    },
+    "sab": {
+      "league": "Azerbaijan Premier League",
+      "source": "wikipedia-table",
+      "note": "Season table GF/GA proxy (≤10 played); no football-data.co.uk Azerbaijan CSV. Wikipedia updated 20 Sep 2026 (5 played, 14 GF, 1 GA).",
+      "matches": [],
+      "gfLast10": 14,
+      "gaLast10": 1,
+      "played": 5
+    },
+    "shk": {
+      "league": "Ukrainian Premier League",
+      "source": "wikipedia-table",
+      "note": "Season table GF/GA proxy (≤10 played); no football-data.co.uk Ukraine CSV. Updated ~Sep 2026 via Wikipedia/upl.ua.",
+      "matches": [],
+      "gfLast10": 15,
+      "gaLast10": 4,
+      "played": 7
+    },
+    "slp": {
+      "league": "Czech First League",
+      "source": "wikipedia-table",
+      "note": "Season table GF/GA proxy (≤10 played); no football-data.co.uk Czech CSV. Wikipedia updated 20 Sep 2026.",
+      "matches": [],
+      "gfLast10": 25,
+      "gaLast10": 6,
+      "played": 9
+    },
+    "slo": {
+      "league": "Slovak First Football League",
+      "source": "table-proxy",
+      "note": "Weaker proxy: thefishy.net overall table (8 played, 20 GF, 9 GA). Wikipedia Niké liga table was stale (26 Aug: 4/14/1); no football-data.co.uk Slovakia CSV.",
+      "matches": [],
+      "gfLast10": 20,
+      "gaLast10": 9,
+      "played": 8
     }
   },
   "gaps": [

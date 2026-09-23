@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T04:02:47.645Z",
-  "reason": "10k MC; Elo from results + full domestic blend (21/36 coverage) (sparse→0) (empty injuries ignored)",
+  "timestamp": "2026-09-23T04:07:29Z",
+  "reason": "free domestic form for remaining non–Big-5 UCL clubs: football-data.co.uk 2627 (P1/N1/B1/T1/G1) + new/ NOR+AUT 2026; Wikipedia league-table GF/GA proxy for Shakhtar/Slavia/Slovan/Sabah; injuries still empty — no free no-key feed",
   "entries": [
     {
       "timestamp": "2026-09-23T04:02:47.644Z",
@@ -698,5 +698,16 @@
       "matchId": "slo-stu",
       "reason": "unit test — probability sum gate"
     }
-  ]
+  ],
+  "updates": [
+    {
+      "timestamp": "2026-09-23T04:00:51Z",
+      "reason": "Scout domestic Big-4: +17 clubs from football-data.co.uk 2627 CSVs (EPL/LaLiga/SerieA/Ligue1); total domestic* coverage 21/36"
+    },
+    {
+      "timestamp": "2026-09-23T04:07:29Z",
+      "reason": "Scout domestic rest15: +15 clubs from football-data.co.uk 2627 P1/N1/B1/T1/G1 + NOR/AUT and Wikipedia/table proxies (shk/slp/slo/sab); total domestic* coverage 36/36"
+    }
+  ],
+  "demo": false
 }
