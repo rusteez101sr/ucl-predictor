@@ -11,7 +11,8 @@
     "test": "vitest run",
     "data:test": "node scripts/data-test.mjs",
     "engine:run": "tsx lib/engine/run-demo.ts",
-    "typecheck:engine": "tsc -p tsconfig.engine.json --noEmit"
+    "typecheck:engine": "tsc -p tsconfig.engine.json --noEmit",
+    "data:refresh": "tsx scripts/refresh-data.ts"
   },
   "dependencies": {
     "next": "^14.2.0",
