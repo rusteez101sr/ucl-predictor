@@ -15,3 +15,7 @@ Required sample files for demo mode (zero API keys):
 
 Every refreshed file must include `{ "timestamp": "<ISO>", "reason": "<why>" }`.
 - `squads.json` — key players for availability modifiers
+
+## Current seed (2026-09)
+
+Live **league phase** slate (not the old demo QF): 36 teams, MD1 results, MD2 fixtures. Sourced from public UEFA/Wikipedia tables (TheSportsDB free tier is too sparse for a full season dump). `demo: false` on data files. Probabilities are placeholders until Professor re-sims.

@@ -1,10 +1,169 @@
 {
-  "timestamp": "2026-09-22T21:30:00-05:00",
-  "reason": "demo seed — recent results for Elo/form context",
   "results": [
-    { "id": "r1", "homeId": "rma", "awayId": "liv", "homeGoals": 2, "awayGoals": 1, "date": "2026-03-15" },
-    { "id": "r2", "homeId": "mci", "awayId": "psg", "homeGoals": 3, "awayGoals": 1, "date": "2026-03-15" },
-    { "id": "r3", "homeId": "bay", "awayId": "ars", "homeGoals": 2, "awayGoals": 2, "date": "2026-03-16" },
-    { "id": "r4", "homeId": "int", "awayId": "bar", "homeGoals": 1, "awayGoals": 0, "date": "2026-03-16" }
-  ]
+    {
+      "id": "md1-1",
+      "homeId": "aek",
+      "awayId": "lask",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "date": "2026-09-08",
+      "matchday": 1
+    },
+    {
+      "id": "md1-2",
+      "homeId": "bru",
+      "awayId": "avl",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "date": "2026-09-08",
+      "matchday": 1
+    },
+    {
+      "id": "md1-3",
+      "homeId": "dor",
+      "awayId": "vil",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "date": "2026-09-08",
+      "matchday": 1
+    },
+    {
+      "id": "md1-4",
+      "homeId": "por",
+      "awayId": "mci",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "date": "2026-09-08",
+      "matchday": 1
+    },
+    {
+      "id": "md1-5",
+      "homeId": "lil",
+      "awayId": "bet",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "date": "2026-09-08",
+      "matchday": 1
+    },
+    {
+      "id": "md1-6",
+      "homeId": "rma",
+      "awayId": "int",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "date": "2026-09-08",
+      "matchday": 1
+    },
+    {
+      "id": "md1-7",
+      "homeId": "bar",
+      "awayId": "fey",
+      "homeGoals": 5,
+      "awayGoals": 1,
+      "date": "2026-09-09",
+      "matchday": 1
+    },
+    {
+      "id": "md1-8",
+      "homeId": "stu",
+      "awayId": "vik",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "date": "2026-09-09",
+      "matchday": 1
+    },
+    {
+      "id": "md1-9",
+      "homeId": "liv",
+      "awayId": "atm",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "date": "2026-09-09",
+      "matchday": 1
+    },
+    {
+      "id": "md1-10",
+      "homeId": "psg",
+      "awayId": "slo",
+      "homeGoals": 6,
+      "awayGoals": 1,
+      "date": "2026-09-09",
+      "matchday": 1
+    },
+    {
+      "id": "md1-11",
+      "homeId": "spo",
+      "awayId": "gal",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "date": "2026-09-09",
+      "matchday": 1
+    },
+    {
+      "id": "md1-12",
+      "homeId": "nap",
+      "awayId": "ars",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "date": "2026-09-09",
+      "matchday": 1
+    },
+    {
+      "id": "md1-13",
+      "homeId": "fen",
+      "awayId": "rom",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "date": "2026-09-10",
+      "matchday": 1
+    },
+    {
+      "id": "md1-14",
+      "homeId": "psv",
+      "awayId": "shk",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "date": "2026-09-10",
+      "matchday": 1
+    },
+    {
+      "id": "md1-15",
+      "homeId": "com",
+      "awayId": "rbl",
+      "homeGoals": 4,
+      "awayGoals": 1,
+      "date": "2026-09-10",
+      "matchday": 1
+    },
+    {
+      "id": "md1-16",
+      "homeId": "bay",
+      "awayId": "bod",
+      "homeGoals": 5,
+      "awayGoals": 0,
+      "date": "2026-09-10",
+      "matchday": 1
+    },
+    {
+      "id": "md1-17",
+      "homeId": "mun",
+      "awayId": "sab",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "2026-09-10",
+      "matchday": 1
+    },
+    {
+      "id": "md1-18",
+      "homeId": "slp",
+      "awayId": "len",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "date": "2026-09-10",
+      "matchday": 1
+    }
+  ],
+  "timestamp": "2026-09-23T03:22:26Z",
+  "reason": "live slate: 2026/27 UCL league phase from public Wikipedia/UEFA",
+  "demo": false
 }

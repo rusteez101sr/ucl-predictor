@@ -1,248 +1,951 @@
 {
-  "timestamp": "2026-09-23T02:53:45.845Z",
-  "reason": "re-sim after Scout refresh: demo cache validated (QF L1 fixtures)",
-  "demo": true,
+  "timestamp": "2026-09-23T03:25:09Z",
+  "reason": "PLACEHOLDER equal priors after Scout live slate \u2014 awaiting Professor league-phase re-sim",
+  "demo": false,
   "seed": 42,
   "matches": [
     {
-      "homeId": "rma",
-      "awayId": "ars",
-      "pHome": 0.6193,
-      "pDraw": 0.2226,
-      "pAway": 0.1581,
+      "homeId": "len",
+      "awayId": "spo",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
       "topScorelines": [
         {
           "home": 1,
-          "away": 0,
-          "p": 0.1357
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "p": 0.1231
+          "away": 1,
+          "p": 0.12
         },
         {
           "home": 1,
-          "away": 1,
-          "p": 0.1075
-        },
-        {
-          "home": 2,
-          "away": 1,
+          "away": 0,
           "p": 0.1
         },
         {
           "home": 0,
-          "away": 0,
-          "p": 0.0736
-        }
-      ],
-      "over25": 0.475,
-      "under25": 0.525,
-      "btts": 0.4508,
-      "lambdaHome": 1.803638636755775,
-      "lambdaAway": 0.7604560741530639
-    },
-    {
-      "homeId": "mci",
-      "awayId": "int",
-      "pHome": 0.5496,
-      "pDraw": 0.2559,
-      "pAway": 0.1945,
-      "topScorelines": [
-        {
-          "home": 1,
-          "away": 0,
-          "p": 0.1343
-        },
-        {
-          "home": 1,
           "away": 1,
-          "p": 0.1238
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "p": 0.109
+          "p": 0.1
         },
         {
           "home": 2,
           "away": 1,
-          "p": 0.0983
-        },
-        {
-          "home": 0,
-          "away": 0,
-          "p": 0.087
-        }
-      ],
-      "over25": 0.4421,
-      "under25": 0.5579000000000001,
-      "btts": 0.4585,
-      "lambdaHome": 1.5813435248873011,
-      "lambdaAway": 0.8417353303164125
-    },
-    {
-      "homeId": "bay",
-      "awayId": "liv",
-      "pHome": 0.6754,
-      "pDraw": 0.1667,
-      "pAway": 0.1579,
-      "topScorelines": [
-        {
-          "home": 2,
-          "away": 1,
-          "p": 0.0901
-        },
-        {
-          "home": 3,
-          "away": 1,
-          "p": 0.0741
-        },
-        {
-          "home": 2,
-          "away": 0,
-          "p": 0.0685
-        },
-        {
-          "home": 1,
-          "away": 1,
-          "p": 0.0667
-        },
-        {
-          "home": 3,
-          "away": 0,
-          "p": 0.0598
-        }
-      ],
-      "over25": 0.7528,
-      "under25": 0.24719999999999998,
-      "btts": 0.6704,
-      "lambdaHome": 2.7106880774795785,
-      "lambdaAway": 1.2635688862278194
-    },
-    {
-      "homeId": "bar",
-      "awayId": "psg",
-      "pHome": 0.4649,
-      "pDraw": 0.2267,
-      "pAway": 0.3084,
-      "topScorelines": [
-        {
-          "home": 1,
-          "away": 1,
-          "p": 0.1006
-        },
-        {
-          "home": 2,
-          "away": 1,
-          "p": 0.0923
+          "p": 0.08
         },
         {
           "home": 1,
           "away": 2,
-          "p": 0.0761
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "sab",
+      "awayId": "slp",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
         },
         {
           "home": 1,
           "away": 0,
-          "p": 0.0712
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
         },
         {
           "home": 2,
-          "away": 0,
-          "p": 0.0656
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
         }
       ],
-      "over25": 0.6298,
-      "under25": 0.3702,
-      "btts": 0.6401,
-      "lambdaHome": 1.8116397962158568,
-      "lambdaAway": 1.4610528014685182
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "ars",
+      "awayId": "lil",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "atm",
+      "awayId": "mun",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "int",
+      "awayId": "bru",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "gal",
+      "awayId": "bar",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "rbl",
+      "awayId": "psv",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "vik",
+      "awayId": "bay",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "vil",
+      "awayId": "nap",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "fey",
+      "awayId": "com",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "lask",
+      "awayId": "liv",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "rom",
+      "awayId": "rma",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "avl",
+      "awayId": "fen",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "shk",
+      "awayId": "aek",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "bod",
+      "awayId": "dor",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "mci",
+      "awayId": "psg",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "bet",
+      "awayId": "por",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
+    },
+    {
+      "homeId": "slo",
+      "awayId": "stu",
+      "pHome": 0.34,
+      "pDraw": 0.28,
+      "pAway": 0.38,
+      "topScorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "p": 0.12
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "p": 0.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "p": 0.1
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "p": 0.08
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "p": 0.08
+        }
+      ],
+      "over25": 0.52,
+      "under25": 0.48,
+      "btts": 0.55,
+      "placeholder": true
     }
   ],
   "tournament": {
     "stage": [
       {
-        "teamId": "rma",
-        "pQuarter": 1,
-        "pSemi": 0.7795,
-        "pFinal": 0.4599,
-        "pTrophy": 0.2898
-      },
-      {
-        "teamId": "ars",
-        "pQuarter": 1,
-        "pSemi": 0.2205,
-        "pFinal": 0.0615,
-        "pTrophy": 0.0263
-      },
-      {
-        "teamId": "mci",
-        "pQuarter": 1,
-        "pSemi": 0.6898,
-        "pFinal": 0.3692,
-        "pTrophy": 0.2319
-      },
-      {
-        "teamId": "int",
-        "pQuarter": 1,
-        "pSemi": 0.3102,
-        "pFinal": 0.1094,
-        "pTrophy": 0.0515
+        "teamId": "psg",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
       },
       {
         "teamId": "bay",
-        "pQuarter": 1,
-        "pSemi": 0.7952,
-        "pFinal": 0.5908,
-        "pTrophy": 0.2716
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "rma",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
       },
       {
         "teamId": "liv",
-        "pQuarter": 1,
-        "pSemi": 0.2048,
-        "pFinal": 0.0882,
-        "pTrophy": 0.0236
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "int",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "mci",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "ars",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
       },
       {
         "teamId": "bar",
-        "pQuarter": 1,
-        "pSemi": 0.5326,
-        "pFinal": 0.1755,
-        "pTrophy": 0.0606
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
       },
       {
-        "teamId": "psg",
-        "pQuarter": 1,
-        "pSemi": 0.4674,
-        "pFinal": 0.1455,
-        "pTrophy": 0.0447
+        "teamId": "atm",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "dor",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "rom",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "spo",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "avl",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "por",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "mun",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "bru",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "bet",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "psv",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "fey",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "lil",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "bod",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "nap",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "rbl",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "vil",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "fen",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "shk",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "gal",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "slp",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "slo",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "stu",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "aek",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "lask",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "com",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "len",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "vik",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
+      },
+      {
+        "teamId": "sab",
+        "pQuarter": 0.6667,
+        "pSemi": 0.2222,
+        "pFinal": 0.1111,
+        "pTrophy": 0.027778
       }
     ],
-    "tieAdvance": {
-      "qf1": {
-        "homeId": "rma",
-        "awayId": "ars",
-        "pHomeAdvances": 0.7795
-      },
-      "qf2": {
-        "homeId": "mci",
-        "awayId": "int",
-        "pHomeAdvances": 0.6898
-      },
-      "qf3": {
-        "homeId": "bay",
-        "awayId": "liv",
-        "pHomeAdvances": 0.7952
-      },
-      "qf4": {
-        "homeId": "bar",
-        "awayId": "psg",
-        "pHomeAdvances": 0.5326
-      }
-    },
-    "iterations": 10000,
+    "tieAdvance": {},
+    "iterations": 0,
     "seed": 42
   }
 }

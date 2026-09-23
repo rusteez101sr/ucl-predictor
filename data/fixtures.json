@@ -1,42 +1,187 @@
 {
   "fixtures": [
     {
-      "id": "qf1-l1",
-      "homeId": "rma",
-      "awayId": "ars",
-      "stage": "quarter",
+      "id": "md2-1",
+      "homeId": "len",
+      "awayId": "spo",
+      "stage": "league_phase",
       "leg": 1,
-      "kickoff": "2026-04-08T15:00:00Z",
+      "matchday": 2,
+      "kickoff": "2026-10-13T16:45:00Z",
       "status": "SCHEDULED"
     },
     {
-      "id": "qf2-l1",
-      "homeId": "mci",
-      "awayId": "int",
-      "stage": "quarter",
+      "id": "md2-2",
+      "homeId": "sab",
+      "awayId": "slp",
+      "stage": "league_phase",
       "leg": 1,
-      "kickoff": "2026-04-08T19:00:00Z",
+      "matchday": 2,
+      "kickoff": "2026-10-13T16:45:00Z",
       "status": "SCHEDULED"
     },
     {
-      "id": "qf3-l1",
-      "homeId": "bay",
+      "id": "md2-3",
+      "homeId": "ars",
+      "awayId": "lil",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-4",
+      "homeId": "atm",
+      "awayId": "mun",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-5",
+      "homeId": "int",
+      "awayId": "bru",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-6",
+      "homeId": "gal",
+      "awayId": "bar",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-7",
+      "homeId": "rbl",
+      "awayId": "psv",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-8",
+      "homeId": "vik",
+      "awayId": "bay",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-9",
+      "homeId": "vil",
+      "awayId": "nap",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-10",
+      "homeId": "fey",
+      "awayId": "com",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-14T16:45:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-11",
+      "homeId": "lask",
       "awayId": "liv",
-      "stage": "quarter",
+      "stage": "league_phase",
       "leg": 1,
-      "kickoff": "2026-04-09T15:00:00Z",
+      "matchday": 2,
+      "kickoff": "2026-10-14T16:45:00Z",
       "status": "SCHEDULED"
     },
     {
-      "id": "qf4-l1",
-      "homeId": "bar",
-      "awayId": "psg",
-      "stage": "quarter",
+      "id": "md2-12",
+      "homeId": "rom",
+      "awayId": "rma",
+      "stage": "league_phase",
       "leg": 1,
-      "kickoff": "2026-04-09T19:00:00Z",
+      "matchday": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-13",
+      "homeId": "avl",
+      "awayId": "fen",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-14",
+      "homeId": "shk",
+      "awayId": "aek",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-15",
+      "homeId": "bod",
+      "awayId": "dor",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-16",
+      "homeId": "mci",
+      "awayId": "psg",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-17",
+      "homeId": "bet",
+      "awayId": "por",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "md2-18",
+      "homeId": "slo",
+      "awayId": "stu",
+      "stage": "league_phase",
+      "leg": 1,
+      "matchday": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
       "status": "SCHEDULED"
     }
   ],
-  "timestamp": "2026-09-23T02:52:44.401Z",
-  "reason": "refresh: demo cache validated (no live API / key missing)"
+  "timestamp": "2026-09-23T03:25:09Z",
+  "reason": "live slate: 2026/27 UCL league phase from public Wikipedia/UEFA",
+  "demo": false
 }
