@@ -5,6 +5,7 @@
   "description": "UEFA Champions League knockout predictor",
   "scripts": {
     "test": "vitest run",
+    "data:test": "node scripts/data-test.mjs",
     "engine:run": "tsx lib/engine/run-demo.ts",
     "dev": "echo \"Striker: Next.js shell not scaffolded yet\" && exit 1",
     "build": "tsc --noEmit"

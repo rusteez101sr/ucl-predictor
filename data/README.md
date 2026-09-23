@@ -14,3 +14,4 @@ Required sample files for demo mode (zero API keys):
 - `news.json` — cached articles (Referee / Scout)
 
 Every refreshed file must include `{ "timestamp": "<ISO>", "reason": "<why>" }`.
+- `squads.json` — key players for availability modifiers

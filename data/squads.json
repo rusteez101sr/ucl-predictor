@@ -1,0 +1,118 @@
+{
+  "timestamp": "2026-09-22T21:30:00-05:00",
+  "reason": "demo seed \u2014 key players for availability modifiers",
+  "squads": {
+    "rma": [
+      {
+        "id": "vini",
+        "name": "Vinicius Junior",
+        "position": "FW",
+        "minutes": 2000,
+        "goals": 15,
+        "assists": 8
+      },
+      {
+        "id": "jude",
+        "name": "Jude Bellingham",
+        "position": "MF",
+        "minutes": 2050,
+        "goals": 11,
+        "assists": 7
+      }
+    ],
+    "mci": [
+      {
+        "id": "erling",
+        "name": "Erling Haaland",
+        "position": "FW",
+        "minutes": 1950,
+        "goals": 24,
+        "assists": 4
+      },
+      {
+        "id": "kdb",
+        "name": "Kevin De Bruyne",
+        "position": "MF",
+        "minutes": 1600,
+        "goals": 6,
+        "assists": 12
+      }
+    ],
+    "bay": [
+      {
+        "id": "kane",
+        "name": "Harry Kane",
+        "position": "FW",
+        "minutes": 2150,
+        "goals": 22,
+        "assists": 6
+      },
+      {
+        "id": "jamal",
+        "name": "Jamal Musiala",
+        "position": "MF",
+        "minutes": 1800,
+        "goals": 10,
+        "assists": 8
+      }
+    ],
+    "psg": [
+      {
+        "id": "ousmane",
+        "name": "Ousmane Dembele",
+        "position": "FW",
+        "minutes": 1850,
+        "goals": 14,
+        "assists": 9
+      }
+    ],
+    "ars": [
+      {
+        "id": "saka",
+        "name": "Bukayo Saka",
+        "position": "FW",
+        "minutes": 2100,
+        "goals": 12,
+        "assists": 10
+      },
+      {
+        "id": "ode",
+        "name": "Martin Odegaard",
+        "position": "MF",
+        "minutes": 1950,
+        "goals": 8,
+        "assists": 9
+      }
+    ],
+    "bar": [
+      {
+        "id": "yamal",
+        "name": "Lamine Yamal",
+        "position": "FW",
+        "minutes": 2050,
+        "goals": 11,
+        "assists": 13
+      }
+    ],
+    "int": [
+      {
+        "id": "lautaro",
+        "name": "Lautaro Martinez",
+        "position": "FW",
+        "minutes": 2000,
+        "goals": 17,
+        "assists": 4
+      }
+    ],
+    "liv": [
+      {
+        "id": "salah",
+        "name": "Mohamed Salah",
+        "position": "FW",
+        "minutes": 2200,
+        "goals": 20,
+        "assists": 11
+      }
+    ]
+  }
+}
