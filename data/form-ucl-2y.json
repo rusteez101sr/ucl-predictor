@@ -1,0 +1,461 @@
+{
+  "timestamp": "2026-09-23T03:47:55Z",
+  "reason": "richer form: OpenLigaDB Bundesliga last matches + public UCL 2024-25/2025-26 league-phase GF/GA; injuries sparse on free tier",
+  "demo": false,
+  "teams": {
+    "psg": {
+      "gf": 46,
+      "ga": 21,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 21,
+          "ga": 11,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 25,
+          "ga": 10,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "bay": {
+      "gf": 46,
+      "ga": 16,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 22,
+          "ga": 8,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 24,
+          "ga": 8,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "rma": {
+      "gf": 41,
+      "ga": 27,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 21,
+          "ga": 12,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 20,
+          "ga": 15,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "liv": {
+      "gf": 37,
+      "ga": 14,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 20,
+          "ga": 8,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 17,
+          "ga": 6,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "int": {
+      "gf": 26,
+      "ga": 9,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 15,
+          "ga": 7,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 11,
+          "ga": 2,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "mci": {
+      "gf": 32,
+      "ga": 18,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 15,
+          "ga": 9,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 17,
+          "ga": 9,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "ars": {
+      "gf": 39,
+      "ga": 8,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 23,
+          "ga": 4,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 16,
+          "ga": 4,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "bar": {
+      "gf": 50,
+      "ga": 27,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 22,
+          "ga": 14,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 28,
+          "ga": 13,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "atm": {
+      "gf": 37,
+      "ga": 30,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 17,
+          "ga": 15,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 20,
+          "ga": 15,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "dor": {
+      "gf": 41,
+      "ga": 31,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 19,
+          "ga": 17,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 22,
+          "ga": 14,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "rom": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "spo": {
+      "gf": 34,
+      "ga": 25,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 17,
+          "ga": 11,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 17,
+          "ga": 14,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "avl": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "por": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "mun": {
+      "gf": 16,
+      "ga": 16,
+      "seasons": [
+        {
+          "season": "2024-2025",
+          "gf": 16,
+          "ga": 16,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 1
+    },
+    "bru": {
+      "gf": 23,
+      "ga": 33,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 15,
+          "ga": 17,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 8,
+          "ga": 16,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "bet": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "psv": {
+      "gf": 36,
+      "ga": 31,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 16,
+          "ga": 16,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 20,
+          "ga": 15,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "fey": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "lil": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "bod": {
+      "gf": 14,
+      "ga": 15,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 14,
+          "ga": 15,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 1
+    },
+    "nap": {
+      "gf": 19,
+      "ga": 31,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 9,
+          "ga": 15,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 10,
+          "ga": 16,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "rbl": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "vil": {
+      "gf": 19,
+      "ga": 32,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 5,
+          "ga": 18,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 14,
+          "ga": 14,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "fen": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "shk": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "gal": {
+      "gf": 21,
+      "ga": 26,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 9,
+          "ga": 11,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 12,
+          "ga": 15,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "slp": {
+      "gf": 12,
+      "ga": 37,
+      "seasons": [
+        {
+          "season": "2025-2026",
+          "gf": 5,
+          "ga": 19,
+          "source": "wikipedia-league-phase-table"
+        },
+        {
+          "season": "2024-2025",
+          "gf": 7,
+          "ga": 18,
+          "source": "wikipedia-league-phase-table"
+        }
+      ],
+      "seasonsCovered": 2
+    },
+    "slo": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "stu": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "aek": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "lask": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "com": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "len": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "vik": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    },
+    "sab": {
+      "gf": 0,
+      "ga": 0,
+      "seasons": [],
+      "seasonsCovered": 0
+    }
+  },
+  "gaps": [
+    "Built from public Wikipedia league-phase tables (2024-25 + 2025-26). Not every KO-leg minute."
+  ]
+}

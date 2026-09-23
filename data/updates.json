@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T03:44:39.641Z",
-  "reason": "determinism A",
+  "timestamp": "2026-09-23T03:47:55Z",
+  "reason": "richer form: OpenLigaDB Bundesliga last matches + public UCL 2024-25/2025-26 league-phase GF/GA; injuries sparse on free tier",
   "entries": [
     {
       "timestamp": "2026-09-23T03:44:39.641Z",
@@ -1465,5 +1465,12 @@
       "metric": "pFinal",
       "reason": "unit test — probability sum gate"
     }
-  ]
+  ],
+  "updates": [
+    {
+      "timestamp": "2026-09-23T03:47:55Z",
+      "reason": "Scout richer form: OpenLigaDB Bundesliga + UCL 2y GF/GA into /data (injuries still empty — free gap)"
+    }
+  ],
+  "demo": false
 }
