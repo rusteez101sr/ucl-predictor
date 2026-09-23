@@ -24,3 +24,8 @@ to the team thread.
 When `data/bracket.json` has `"stage": "league_phase"` (empty ties), `runEngine`
 uses `leaguephase.ts`: MD results + scheduled fixtures + average-opponent padding
 to 8 games → table → top-8 / playoff / R16 knockout MC.
+
+## Richer form blend
+Attack/defense rates weight recent window 35%, domestic form 35% (when present),
+UCL 2y league-phase rate 30%. Empty `injuries.json` is never applied automatically.
+

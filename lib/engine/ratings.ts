@@ -1,9 +1,14 @@
 /**
- * Team ratings from UEFA coefficients, Elo, and recent attack/defense form.
+ * Team ratings from UEFA coefficients, Elo, and blended form.
  *
  * strength = 0.4 × normalised UEFA coefficient + 0.6 × normalised Elo
- * Attack/defense use xG when present, else goals for/against over last 10 games,
- * scaled so league average ≈ 1.
+ *
+ * Attack/defense per-game rates blend (when present):
+ * - 35% recent window (xG or gf/ga last 10)
+ * - 35% domestic league form (OpenLigaDB etc.)
+ * - 30% UCL last-two-seasons league-phase rate (ucl2yGf / (seasons×8))
+ * Missing layers redistribute weight to whatever is available.
+ * Empty injuries.json is ignored — never a signal.
  */
 
 import type { AvailabilityModifier, TeamInput, TeamRatings } from "./types";
@@ -11,12 +16,75 @@ import type { AvailabilityModifier, TeamInput, TeamRatings } from "./types";
 const GAMES = 10;
 /** Typical top-flight goals per team per match — used to centre λ. */
 export const LEAGUE_AVG_GOALS = 1.35;
+/** Approximate UCL league-phase games per season. */
+const UCL_GAMES_PER_SEASON = 8;
 
 function minMaxNorm(values: number[]): number[] {
   const lo = Math.min(...values);
   const hi = Math.max(...values);
   if (hi === lo) return values.map(() => 0.5);
   return values.map((v) => (v - lo) / (hi - lo));
+}
+
+type Layer = { rate: number; weight: number };
+
+function blendRates(layers: Layer[]): number {
+  const usable = layers.filter((l) => l.weight > 0 && Number.isFinite(l.rate));
+  if (usable.length === 0) return LEAGUE_AVG_GOALS;
+  const wSum = usable.reduce((s, l) => s + l.weight, 0);
+  return usable.reduce((s, l) => s + l.rate * (l.weight / wSum), 0);
+}
+
+/**
+ * Goals-for per game from Scout's richer fields + recent window.
+ */
+export function attackRate(t: TeamInput): number {
+  const recent = (t.xgForLast10 ?? t.gfLast10) / GAMES;
+  const domesticPlayed = t.domesticPlayed && t.domesticPlayed > 0
+    ? t.domesticPlayed
+    : t.domesticGfLast10 != null
+      ? GAMES
+      : 0;
+  const domestic =
+    t.domesticGfLast10 != null && domesticPlayed > 0
+      ? t.domesticGfLast10 / domesticPlayed
+      : NaN;
+  const seasons = t.ucl2ySeasons && t.ucl2ySeasons > 0 ? t.ucl2ySeasons : 0;
+  const ucl2y =
+    t.ucl2yGf != null && seasons > 0
+      ? t.ucl2yGf / (seasons * UCL_GAMES_PER_SEASON)
+      : NaN;
+
+  return blendRates([
+    { rate: recent, weight: 0.35 },
+    { rate: domestic, weight: Number.isFinite(domestic) ? 0.35 : 0 },
+    { rate: ucl2y, weight: Number.isFinite(ucl2y) ? 0.3 : 0 },
+  ]);
+}
+
+/** Goals-against per game (lower is better defensively). */
+export function defenseRate(t: TeamInput): number {
+  const recent = (t.xgAgainstLast10 ?? t.gaLast10) / GAMES;
+  const domesticPlayed = t.domesticPlayed && t.domesticPlayed > 0
+    ? t.domesticPlayed
+    : t.domesticGaLast10 != null
+      ? GAMES
+      : 0;
+  const domestic =
+    t.domesticGaLast10 != null && domesticPlayed > 0
+      ? t.domesticGaLast10 / domesticPlayed
+      : NaN;
+  const seasons = t.ucl2ySeasons && t.ucl2ySeasons > 0 ? t.ucl2ySeasons : 0;
+  const ucl2y =
+    t.ucl2yGa != null && seasons > 0
+      ? t.ucl2yGa / (seasons * UCL_GAMES_PER_SEASON)
+      : NaN;
+
+  return blendRates([
+    { rate: recent, weight: 0.35 },
+    { rate: domestic, weight: Number.isFinite(domestic) ? 0.35 : 0 },
+    { rate: ucl2y, weight: Number.isFinite(ucl2y) ? 0.3 : 0 },
+  ]);
 }
 
 /**
@@ -28,16 +96,8 @@ export function buildRatings(teams: TeamInput[]): TeamRatings[] {
   const coefNorm = minMaxNorm(teams.map((t) => t.uefaCoefficient));
   const eloNorm = minMaxNorm(teams.map((t) => t.elo));
 
-  const attackRaw = teams.map((t) => {
-    const forPerGame =
-      (t.xgForLast10 ?? t.gfLast10) / GAMES;
-    return forPerGame;
-  });
-  const defenseRaw = teams.map((t) => {
-    const againstPerGame =
-      (t.xgAgainstLast10 ?? t.gaLast10) / GAMES;
-    return againstPerGame;
-  });
+  const attackRaw = teams.map(attackRate);
+  const defenseRaw = teams.map(defenseRate);
 
   const meanAttack =
     attackRaw.reduce((a, b) => a + b, 0) / attackRaw.length || LEAGUE_AVG_GOALS;
@@ -45,13 +105,10 @@ export function buildRatings(teams: TeamInput[]): TeamRatings[] {
     defenseRaw.reduce((a, b) => a + b, 0) / defenseRaw.length || LEAGUE_AVG_GOALS;
 
   return teams.map((t, i) => {
-    // Blend UEFA pedigree with current Elo form.
     const strength = 0.4 * coefNorm[i] + 0.6 * eloNorm[i];
-    // Map strength into a mild multiplier around 1 (±~15%).
     const strengthMult = 0.85 + 0.3 * strength;
 
     const attack = (attackRaw[i] / meanAttack) * strengthMult;
-    // Defense: below-average goals conceded → rating < 1 (harder to score against).
     const defense = (defenseRaw[i] / meanDefense) / strengthMult;
 
     return {
@@ -71,8 +128,8 @@ export function buildRatings(teams: TeamInput[]): TeamRatings[] {
  *
  * Heuristic: if a key player is out, scale team attack down by
  *   (player goal contributions per 90 ÷ team goals per 90) × 0.5
- * Cap the cut at 35% so one missing star never collapses the side unrealistically.
- * We only touch attack (creation), not defense — a crude but transparent proxy.
+ * Cap the cut at 35%. Empty injuries caches are not a signal — only explicit
+ * modifiers passed into runEngine() apply.
  */
 export function applyAvailabilityModifier(
   ratings: TeamRatings[],
@@ -94,7 +151,6 @@ export function applyAvailabilityModifier(
 
 /**
  * Elo update after a real result (standard logistic, K=20 for club comps).
- * Bundled here so Scout/Professor stay aligned when results land.
  */
 export function updateElo(
   homeElo: number,
