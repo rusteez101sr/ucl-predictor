@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-22T21:30:00-05:00",
+  "reason": "demo seed — bootstrap for engine; Scout owns live refresh",
+  "teams": [
+    { "id": "rma", "name": "Real Madrid", "uefaCoefficient": 145.0, "elo": 1985, "gfLast10": 22, "gaLast10": 8, "xgForLast10": 20.5, "xgAgainstLast10": 9.2 },
+    { "id": "mci", "name": "Manchester City", "uefaCoefficient": 138.0, "elo": 1970, "gfLast10": 24, "gaLast10": 9, "xgForLast10": 23.1, "xgAgainstLast10": 10.0 },
+    { "id": "bay", "name": "Bayern Munich", "uefaCoefficient": 132.0, "elo": 1945, "gfLast10": 28, "gaLast10": 10, "xgForLast10": 25.0, "xgAgainstLast10": 11.5 },
+    { "id": "psg", "name": "Paris Saint-Germain", "uefaCoefficient": 118.0, "elo": 1910, "gfLast10": 21, "gaLast10": 11, "xgForLast10": 19.8, "xgAgainstLast10": 12.0 },
+    { "id": "ars", "name": "Arsenal", "uefaCoefficient": 110.0, "elo": 1905, "gfLast10": 20, "gaLast10": 9, "xgForLast10": 18.5, "xgAgainstLast10": 9.8 },
+    { "id": "bar", "name": "Barcelona", "uefaCoefficient": 125.0, "elo": 1920, "gfLast10": 23, "gaLast10": 12, "xgForLast10": 21.2, "xgAgainstLast10": 13.1 },
+    { "id": "int", "name": "Inter", "uefaCoefficient": 120.0, "elo": 1915, "gfLast10": 18, "gaLast10": 7, "xgForLast10": 16.9, "xgAgainstLast10": 8.5 },
+    { "id": "liv", "name": "Liverpool", "uefaCoefficient": 115.0, "elo": 1895, "gfLast10": 25, "gaLast10": 12, "xgForLast10": 22.0, "xgAgainstLast10": 13.5 }
+  ]
+}
