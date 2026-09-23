@@ -26,6 +26,10 @@ export interface TeamInput {
   ucl2yGf?: number;
   ucl2yGa?: number;
   ucl2ySeasons?: number;
+  /** Recent UCL titles in pedigree window (optional). */
+  uclTitles?: number;
+  uclFinals?: number;
+  uclSf?: number;
 }
 
 export interface TeamRatings {

@@ -15,6 +15,20 @@ import type { AvailabilityModifier, TeamInput, TeamRatings } from "./types";
 const GAMES = 10;
 /** Typical top-flight goals per team per match — used to centre λ. */
 export const LEAGUE_AVG_GOALS = 1.35;
+
+/** Weighted KO resume: titles dominate finals dominate SF. */
+export function pedigreeScore(t: {
+  uclTitles?: number;
+  uclFinals?: number;
+  uclSf?: number;
+}): number {
+  return (
+    1.0 * (t.uclTitles ?? 0) +
+    0.45 * (t.uclFinals ?? 0) +
+    0.2 * (t.uclSf ?? 0)
+  );
+}
+
 /** Approximate UCL league-phase games per season. */
 const UCL_GAMES_PER_SEASON = 8;
 
@@ -149,8 +163,16 @@ export function buildRatings(teams: TeamInput[]): TeamRatings[] {
   const meanDefense =
     defenseRaw.reduce((a, b) => a + b, 0) / defenseRaw.length || LEAGUE_AVG_GOALS;
 
+  const pedRaw = teams.map((t) => pedigreeScore(t));
+  const pedNorm = minMaxNorm(pedRaw.map((v) => (v > 0 ? v : 0)));
+  // If nobody has pedigree, fall back to coef/Elo only.
+  const anyPed = pedRaw.some((v) => v > 0);
+
   return teams.map((t, i) => {
-    const strength = 0.4 * coefNorm[i] + 0.6 * eloNorm[i];
+    // Resume matters in KO: 30% UEFA + 45% Elo + 25% recent UCL pedigree.
+    const strength = anyPed
+      ? 0.3 * coefNorm[i] + 0.45 * eloNorm[i] + 0.25 * pedNorm[i]
+      : 0.4 * coefNorm[i] + 0.6 * eloNorm[i];
     const strengthMult = 0.85 + 0.3 * strength;
 
     const attack = (attackRaw[i] / meanAttack) * strengthMult;

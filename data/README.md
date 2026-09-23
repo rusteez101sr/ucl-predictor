@@ -27,3 +27,5 @@ Live **league phase** slate (not the old demo QF): 36 teams, MD1 results, MD2 fi
 - `form-ucl-2y.json` — UCL league-phase GF/GA for 2024-25 + 2025-26 (public Wikipedia tables)
 - `injuries.json` — empty; no free injury feed without signup (gap labeled)
 - Teams carry `domesticGfLast10` / `ucl2yGf` fields for Professor ratings; domestic coverage now 36/36 (wikipedia/table proxies labeled weaker for shk/slp/slo/sab)
+
+- `ucl-pedigree.json` — recent UCL titles/finals/SF for KO resume (Professor)
