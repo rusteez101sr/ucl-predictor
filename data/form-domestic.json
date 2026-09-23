@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T03:47:55Z",
-  "reason": "richer form: OpenLigaDB Bundesliga last matches + public UCL 2024-25/2025-26 league-phase GF/GA; injuries sparse on free tier",
+  "timestamp": "2026-09-23T04:00:51Z",
+  "reason": "free domestic form: football-data.co.uk 2026-27 CSVs for EPL/LaLiga/SerieA/Ligue1 UCL clubs (keep OpenLigaDB Bundesliga); injuries still empty — no free no-key feed",
   "demo": false,
   "teams": {
     "bay": {
@@ -182,9 +182,1020 @@
       "gfLast10": 9,
       "gaLast10": 2,
       "played": 4
+    },
+    "ars": {
+      "league": "Premier League",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-21",
+          "opponent": "Coventry",
+          "gf": 3,
+          "ga": 0,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-31",
+          "opponent": "Aston Villa",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-06",
+          "opponent": "Chelsea",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "Sunderland",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Brighton",
+          "gf": 0,
+          "ga": 3,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 8,
+      "gaLast10": 4,
+      "played": 5
+    },
+    "mun": {
+      "league": "Premier League",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Hull",
+          "gf": 0,
+          "ga": 2,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Ipswich",
+          "gf": 5,
+          "ga": 2,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-06",
+          "opponent": "Everton",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Man City",
+          "gf": 0,
+          "ga": 1,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Fulham",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 8,
+      "gaLast10": 8,
+      "played": 5
+    },
+    "avl": {
+      "league": "Premier League",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-23",
+          "opponent": "Brighton",
+          "gf": 0,
+          "ga": 4,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-31",
+          "opponent": "Arsenal",
+          "gf": 0,
+          "ga": 1,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Hull",
+          "gf": 0,
+          "ga": 0,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "Nott'm Forest",
+          "gf": 1,
+          "ga": 2,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Tottenham",
+          "gf": 3,
+          "ga": 2,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 4,
+      "gaLast10": 9,
+      "played": 5
+    },
+    "mci": {
+      "league": "Premier League",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-23",
+          "opponent": "Bournemouth",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-28",
+          "opponent": "Crystal Palace",
+          "gf": 4,
+          "ga": 1,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Coventry",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Man United",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Sunderland",
+          "gf": 5,
+          "ga": 3,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 13,
+      "gaLast10": 5,
+      "played": 5
+    },
+    "liv": {
+      "league": "Premier League",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-23",
+          "opponent": "Newcastle",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Nott'm Forest",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Ipswich",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "Fulham",
+          "gf": 0,
+          "ga": 0,
+          "home": true,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Bournemouth",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Premier League",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 7,
+      "gaLast10": 4,
+      "played": 5
+    },
+    "vil": {
+      "league": "La Liga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-16",
+          "opponent": "Santander",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "Ath Madrid",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-28",
+          "opponent": "Alaves",
+          "gf": 0,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "La Coruna",
+          "gf": 2,
+          "ga": 3,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-14",
+          "opponent": "Betis",
+          "gf": 1,
+          "ga": 2,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-17",
+          "opponent": "Malaga",
+          "gf": 3,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Levante",
+          "gf": 3,
+          "ga": 1,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 13,
+      "gaLast10": 12,
+      "played": 7
+    },
+    "atm": {
+      "league": "La Liga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-19",
+          "opponent": "Malaga",
+          "gf": 2,
+          "ga": 0,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "Villarreal",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Sevilla",
+          "gf": 3,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Ath Bilbao",
+          "gf": 0,
+          "ga": 3,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Sociedad",
+          "gf": 3,
+          "ga": 0,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-16",
+          "opponent": "Osasuna",
+          "gf": 4,
+          "ga": 0,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Real Madrid",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 16,
+      "gaLast10": 7,
+      "played": 7
+    },
+    "bet": {
+      "league": "La Liga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-21",
+          "opponent": "Sociedad",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-25",
+          "opponent": "Valencia",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Levante",
+          "gf": 2,
+          "ga": 5,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Real Madrid",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-14",
+          "opponent": "Villarreal",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-17",
+          "opponent": "Getafe",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "La Coruna",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 9,
+      "gaLast10": 7,
+      "played": 7
+    },
+    "rma": {
+      "league": "La Liga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Espanol",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-26",
+          "opponent": "Sociedad",
+          "gf": 4,
+          "ga": 1,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Malaga",
+          "gf": 4,
+          "ga": 0,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Betis",
+          "gf": 0,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "Vallecano",
+          "gf": 4,
+          "ga": 1,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-15",
+          "opponent": "Elche",
+          "gf": 3,
+          "ga": 2,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Ath Madrid",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 18,
+      "gaLast10": 8,
+      "played": 7
+    },
+    "bar": {
+      "league": "La Liga",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-23",
+          "opponent": "Elche",
+          "gf": 5,
+          "ga": 0,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-27",
+          "opponent": "Ath Bilbao",
+          "gf": 2,
+          "ga": 0,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-31",
+          "opponent": "Vallecano",
+          "gf": 5,
+          "ga": 2,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-06",
+          "opponent": "Valencia",
+          "gf": 5,
+          "ga": 0,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Levante",
+          "gf": 4,
+          "ga": 2,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-16",
+          "opponent": "Santander",
+          "gf": 7,
+          "ga": 2,
+          "home": true,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Sevilla",
+          "gf": 3,
+          "ga": 1,
+          "home": false,
+          "competition": "La Liga",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 31,
+      "gaLast10": 7,
+      "played": 7
+    },
+    "int": {
+      "league": "Serie A",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Monza",
+          "gf": 4,
+          "ga": 1,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Cagliari",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Napoli",
+          "gf": 3,
+          "ga": 2,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-14",
+          "opponent": "Udinese",
+          "gf": 5,
+          "ga": 3,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Roma",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 15,
+      "gaLast10": 8,
+      "played": 5
+    },
+    "com": {
+      "league": "Serie A",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Udinese",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Napoli",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Genoa",
+          "gf": 4,
+          "ga": 1,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-14",
+          "opponent": "Parma",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Frosinone",
+          "gf": 0,
+          "ga": 2,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 9,
+      "gaLast10": 6,
+      "played": 5
+    },
+    "nap": {
+      "league": "Serie A",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Genoa",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Como",
+          "gf": 1,
+          "ga": 2,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Inter",
+          "gf": 2,
+          "ga": 3,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Bologna",
+          "gf": 1,
+          "ga": 0,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Fiorentina",
+          "gf": 1,
+          "ga": 1,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 7,
+      "gaLast10": 6,
+      "played": 5
+    },
+    "rom": {
+      "league": "Serie A",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-24",
+          "opponent": "Fiorentina",
+          "gf": 4,
+          "ga": 0,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-31",
+          "opponent": "Lecce",
+          "gf": 4,
+          "ga": 0,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Atalanta",
+          "gf": 2,
+          "ga": 1,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-14",
+          "opponent": "Torino",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-19",
+          "opponent": "Inter",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Serie A",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 14,
+      "gaLast10": 3,
+      "played": 5
+    },
+    "len": {
+      "league": "Ligue 1",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Auxerre",
+          "gf": 5,
+          "ga": 2,
+          "home": true,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Strasbourg",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Lorient",
+          "gf": 0,
+          "ga": 1,
+          "home": true,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Le Mans",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-18",
+          "opponent": "Monaco",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 9,
+      "gaLast10": 9,
+      "played": 5
+    },
+    "lil": {
+      "league": "Ligue 1",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-23",
+          "opponent": "Angers",
+          "gf": 2,
+          "ga": 0,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-28",
+          "opponent": "Paris SG",
+          "gf": 2,
+          "ga": 2,
+          "home": true,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-03",
+          "opponent": "Toulouse",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Troyes",
+          "gf": 2,
+          "ga": 0,
+          "home": true,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Nice",
+          "gf": 1,
+          "ga": 2,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 8,
+      "gaLast10": 4,
+      "played": 5
+    },
+    "psg": {
+      "league": "Ligue 1",
+      "source": "football-data.co.uk",
+      "matches": [
+        {
+          "date": "2026-08-23",
+          "opponent": "Rennes",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-08-28",
+          "opponent": "Lille",
+          "gf": 2,
+          "ga": 2,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Monaco",
+          "gf": 1,
+          "ga": 2,
+          "home": true,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Brest",
+          "gf": 1,
+          "ga": 0,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Marseille",
+          "gf": 2,
+          "ga": 1,
+          "home": false,
+          "competition": "Ligue 1",
+          "source": "football-data.co.uk"
+        }
+      ],
+      "gfLast10": 8,
+      "gaLast10": 7,
+      "played": 5
     }
   },
   "gaps": [
-    "Only Bundesliga clubs via OpenLigaDB (bay/dor/rbl/stu). Other domestic leagues: free TheSportsDB too thin."
+    "Domestic match lists for EPL/LaLiga/SerieA/Ligue1 from football-data.co.uk 2026-27 season CSVs (free, no key).",
+    "Bundesliga still from OpenLigaDB (bay/dor/rbl/stu).",
+    "No free domestic CSV mapped for: spo/por (Portugal), bru (Belgium), psv/fey (Netherlands), bod/vik (Norway), fen/gal (Turkey), shk (Ukraine), slp (Czechia), slo (Slovakia), aek (Greece), lask (Austria), sab (Azerbaijan).",
+    "Injuries: no free no-key feed; injuries.json remains empty."
   ]
 }

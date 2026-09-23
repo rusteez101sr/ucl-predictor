@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-23T03:52:17.566Z",
-  "reason": "10k MC; domestic weight coverage-scaled (sparse→0) (empty injuries ignored)",
+  "timestamp": "2026-09-23T04:00:51Z",
+  "reason": "free domestic form: football-data.co.uk 2026-27 CSVs for EPL/LaLiga/SerieA/Ligue1 UCL clubs (keep OpenLigaDB Bundesliga); injuries still empty — no free no-key feed",
   "entries": [
     {
       "timestamp": "2026-09-23T03:52:17.565Z",
@@ -1511,5 +1511,12 @@
       "matchId": "rbl-psv",
       "reason": "determinism A"
     }
-  ]
+  ],
+  "updates": [
+    {
+      "timestamp": "2026-09-23T04:00:51Z",
+      "reason": "Scout domestic Big-4: +17 clubs from football-data.co.uk 2627 CSVs (EPL/LaLiga/SerieA/Ligue1); total domestic* coverage 21/36"
+    }
+  ],
+  "demo": false
 }

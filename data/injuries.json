@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-23T03:47:55Z",
-  "reason": "richer form: OpenLigaDB Bundesliga last matches + public UCL 2024-25/2025-26 league-phase GF/GA; injuries sparse on free tier",
+  "timestamp": "2026-09-23T04:00:51Z",
+  "reason": "free domestic form: football-data.co.uk 2026-27 CSVs for EPL/LaLiga/SerieA/Ligue1 UCL clubs (keep OpenLigaDB Bundesliga); injuries still empty — no free no-key feed",
   "demo": false,
   "injuries": [],
   "gaps": [
     "No free injury API without signup (API-Football is keyed). Field left empty until a free feed exists.",
     "Player-level every-match form (national/friendly/club) not available on free TheSportsDB/OpenLigaDB depth.",
-    "Domestic form outside Bundesliga not on OpenLigaDB; EPL/LaLiga/Ligue1/SerieA free TheSportsDB past endpoint returns ~1 event."
+    "Domestic form now covers Bundesliga (OpenLigaDB) + EPL/LaLiga/SerieA/Ligue1 (football-data.co.uk); other leagues still uncovered."
   ]
 }
