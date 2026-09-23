@@ -6,6 +6,10 @@
 
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import {
+  simulateLeagueFixtures,
+  simulateLeaguePhaseTournament,
+} from "./leaguephase";
 import { simulateTournament } from "./montecarlo";
 import { simulateMatch } from "./poisson";
 import {
@@ -37,6 +41,10 @@ export {
 } from "./ratings";
 export { simulateMatch, expectedGoals, simulateTwoLeggedTie } from "./poisson";
 export { simulateTournament, sumStage } from "./montecarlo";
+export {
+  simulateLeaguePhaseTournament,
+  simulateLeagueFixtures,
+} from "./leaguephase";
 export { makeRng, mulberry32 } from "./rng";
 export {
   diffProbabilities,
@@ -58,9 +66,32 @@ export function loadTeams(root?: string): TeamInput[] {
   return raw.teams as TeamInput[];
 }
 
-export function loadBracket(root?: string): BracketTie[] {
+export function loadBracket(root?: string): {
+  stage?: string;
+  ties: BracketTie[];
+} {
   const raw = JSON.parse(readFileSync(dataPath("bracket.json", root), "utf8"));
-  return raw.ties as BracketTie[];
+  return { stage: raw.stage as string | undefined, ties: (raw.ties ?? []) as BracketTie[] };
+}
+
+export function loadResults(root?: string) {
+  const raw = JSON.parse(readFileSync(dataPath("results.json", root), "utf8"));
+  return (raw.results ?? []) as Array<{
+    homeId: string;
+    awayId: string;
+    homeGoals: number;
+    awayGoals: number;
+  }>;
+}
+
+export function loadFixtures(root?: string) {
+  const raw = JSON.parse(readFileSync(dataPath("fixtures.json", root), "utf8"));
+  return (raw.fixtures ?? []) as Array<{
+    id: string;
+    homeId: string;
+    awayId: string;
+    status: string;
+  }>;
 }
 
 export interface EngineOutput {
@@ -73,16 +104,13 @@ export interface EngineOutput {
 }
 
 export interface RunEngineResult extends EngineOutput {
-  /** Fresh what-changed entries (>2pp) from this run. */
   moves: UpdateEntry[];
-  /** Subset of moves with |Δ| > 5pp. */
   notable: UpdateEntry[];
 }
 
 /**
- * Full engine pass: ratings → match sims → tournament MC.
- * Diffs against the previous probabilities.json, appends >2pp moves to
- * updates.json, then overwrites probabilities.json for Striker.
+ * Full engine pass. League-phase when bracket.stage === "league_phase"
+ * (or ties empty); otherwise classic 4-tie knockout MC.
  */
 export function runEngine(opts: {
   demo?: boolean;
@@ -92,10 +120,15 @@ export function runEngine(opts: {
   availability?: AvailabilityModifier[];
   iterations?: number;
 }): RunEngineResult {
-  const demo = opts.demo !== false;
   const seed = opts.seed ?? DEMO_SEED;
   const root = opts.root ?? process.cwd();
+  const bracket = loadBracket(root);
+  const leaguePhase =
+    bracket.stage === "league_phase" || bracket.ties.length === 0;
+  const demo =
+    opts.demo !== undefined ? opts.demo : !leaguePhase ? true : false;
   const rng = makeRng(demo, seed);
+  const iters = opts.iterations ?? 10_000;
 
   const previous = loadPreviousProbabilities(root);
 
@@ -104,29 +137,45 @@ export function runEngine(opts: {
     ratings = applyAvailabilityModifier(ratings, mod);
   }
 
-  const ties = loadBracket(root);
-  const ratingMap = new Map(ratings.map((r) => [r.id, r]));
+  let matches: MatchProbabilities[];
+  let tournament: TournamentResult;
 
-  const matches: MatchProbabilities[] = ties.map((tie) =>
-    simulateMatch(
-      ratingMap.get(tie.homeId)!,
-      ratingMap.get(tie.awayId)!,
+  if (leaguePhase) {
+    const fixtures = loadFixtures(root);
+    const results = loadResults(root);
+    matches = simulateLeagueFixtures(ratings, fixtures, rng, iters);
+    tournament = simulateLeaguePhaseTournament(
+      ratings,
+      results,
+      fixtures,
       rng,
-      opts.iterations ?? 10_000
-    )
-  );
+      iters
+    );
+  } else {
+    const ties = bracket.ties;
+    const ratingMap = new Map(ratings.map((r) => [r.id, r]));
+    matches = ties.map((tie) =>
+      simulateMatch(
+        ratingMap.get(tie.homeId)!,
+        ratingMap.get(tie.awayId)!,
+        rng,
+        iters
+      )
+    );
+    tournament = simulateTournament(ratings, ties, rng, iters);
+  }
 
-  const tournament = simulateTournament(
-    ratings,
-    ties,
-    rng,
-    opts.iterations ?? 10_000
-  );
   tournament.seed = demo ? seed : "random";
 
   const output: EngineOutput = {
     timestamp: new Date().toISOString(),
-    reason: opts.reason ?? (demo ? "demo seed run" : "live re-sim"),
+    reason:
+      opts.reason ??
+      (leaguePhase
+        ? "league-phase Monte Carlo (free live slate)"
+        : demo
+          ? "demo seed run"
+          : "live re-sim"),
     demo,
     seed: tournament.seed,
     matches,
