@@ -8,7 +8,7 @@ const out = runEngine({
   demo: !league,
   seed: 42,
   reason: league
-    ? "10k MC with domestic+UCL-2y form blend (empty injuries ignored)"
+    ? "10k MC; domestic weight coverage-scaled (sparse→0) (empty injuries ignored)"
     : "demo knockout Monte Carlo",
   iterations: 10_000,
 });
