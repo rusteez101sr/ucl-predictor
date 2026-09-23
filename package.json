@@ -11,7 +11,9 @@
     "test": "vitest run",
     "data:test": "node scripts/data-test.mjs",
     "engine:run": "tsx lib/engine/run-demo.ts",
-    "typecheck:engine": "tsc -p tsconfig.engine.json --noEmit"
+    "typecheck:engine": "tsc -p tsconfig.engine.json --noEmit",
+    "build:pages": "GITHUB_PAGES=true next build && node scripts/pages-postbuild.mjs",
+    "export": "GITHUB_PAGES=true next build"
   },
   "dependencies": {
     "next": "^14.2.0",

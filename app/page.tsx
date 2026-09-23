@@ -13,7 +13,6 @@ import {
   teamName,
 } from "@/lib/data/load";
 
-export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const [teamsData, fixturesData, probs, updatesData] = await Promise.all([

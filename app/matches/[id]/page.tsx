@@ -4,6 +4,7 @@ import { EmptyState } from "@/components/EmptyState";
 import { OutcomeBars } from "@/components/OutcomeBars";
 import { UpdatedLabel } from "@/components/UpdatedLabel";
 import { formatKickoff, pct } from "@/lib/data/format";
+
 import {
   loadFixtures,
   loadProbabilities,
@@ -12,7 +13,11 @@ import {
   teamName,
 } from "@/lib/data/load";
 
-export const dynamic = "force-dynamic";
+export async function generateStaticParams() {
+  const { fixtures } = await loadFixtures();
+  return fixtures.map((f) => ({ id: f.id }));
+}
+
 
 export default async function MatchDetailPage({
   params,

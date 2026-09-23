@@ -4,7 +4,6 @@ import { UpdatedLabel } from "@/components/UpdatedLabel";
 import { pct } from "@/lib/data/format";
 import { loadProbabilities, loadTeams } from "@/lib/data/load";
 
-export const dynamic = "force-dynamic";
 
 export default async function TeamsPage() {
   const [teamsData, probs] = await Promise.all([
