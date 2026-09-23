@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EmptyState } from "@/components/EmptyState";
 import { ProbabilityBar } from "@/components/ProbabilityBar";
+import { RatingBars } from "@/components/RatingBars";
 import { UpdatedLabel } from "@/components/UpdatedLabel";
 import { formatKickoff } from "@/lib/data/format";
 import {
@@ -12,6 +13,7 @@ import {
   teamMap,
   teamName,
 } from "@/lib/data/load";
+import { ratingsForTeams } from "@/lib/data/ratings-view";
 
 export async function generateStaticParams() {
   const { teams } = await loadTeams();
@@ -34,6 +36,7 @@ export default async function TeamDetailPage({
   if (!team) notFound();
 
   const map = teamMap(teamsData.teams);
+  const rating = ratingsForTeams(teamsData.teams).get(team.id);
   const stage = probs?.tournament.stage.find((s) => s.teamId === team.id);
   const upcoming = fixturesData.fixtures.filter(
     (f) => f.homeId === team.id || f.awayId === team.id,
@@ -80,6 +83,29 @@ export default async function TeamDetailPage({
               <ProbabilityBar label="Make KO phase" value={stage.pKnockout} />
             )}
           </div>
+        )}
+      </section>
+
+
+      <section className="rounded-2xl border border-white/5 bg-night-850/70 p-5">
+        <h2 className="mb-3 font-display text-lg font-semibold text-cl-white">
+          Attack / defense ratings
+        </h2>
+        <p className="mb-4 text-xs text-cl-muted">
+          Same ratings the Poisson model uses (league-average ≈ 1). Makes edges
+          like Liverpool vs PSG visible next to the trophy odds.
+        </p>
+        {rating ? (
+          <RatingBars
+            attack={rating.attack}
+            defense={rating.defense}
+            strength={rating.strength}
+          />
+        ) : (
+          <EmptyState
+            title="No ratings"
+            detail="Ratings appear once team form fields are in /data."
+          />
         )}
       </section>
 
