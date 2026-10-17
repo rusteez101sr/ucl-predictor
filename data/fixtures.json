@@ -181,6 +181,6 @@
       "status": "SCHEDULED"
     }
   ],
-  "timestamp": "2026-10-17T09:54:15.040Z",
+  "timestamp": "2026-10-17T14:39:22.223Z",
   "reason": "refresh: demo cache validated (no live API / key missing)"
 }
